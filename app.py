@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import abort
 from flask import render_template
 import os
 
@@ -12,7 +13,7 @@ app = Flask(__name__)
 def get_csv():
 	airports = get_avlocs().reset_index()
 	# get only those in VIC
-	airports = airports.loc[airports['State'].str.contains('VIC'),]
+	# airports = airports.loc[airports['State'].str.contains('VIC'),]
 
     # convert DF .to_dict() as we can't pass pandas DF to jinja2 templates
 	# 'records' works as it gets rid of row index values for each column
@@ -40,6 +41,8 @@ def detail(row_id):
     for row in object_list:
         if row['LOC_ID'] == row_id:
             return render_template(template, object=row)
+    abort(404)  # Display MSG if no page found
+    #Not Found : The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
 
 if __name__ == '__main__':
     # Fire up the Flask test server

@@ -1,0 +1,186 @@
+bou@fed27 flask_projects]$ mkdir taf_intel_app
+
+[bou@fed27 flask_projects]$ cd taf_intel_app/
+
+[bou@fed27 taf_intel_app]$ git init repo
+Initialized empty Git repository in /mnt/win_data/shared/stats-R/flask_projects/taf_intel_app/repo/.git/
+[bou@fed27 taf_intel_app]$ cd repo
+[bou@fed27 repo]$ ls -ltr
+total 0
+
+[bou@fed27 repo]$ git remote add origin https://github.com/launda/taf_intel_app.git
+
+[bou@fed27 repo]$ touch README.md
+
+[bou@fed27 repo]$ echo "Airport Info App" >> README.md
+[bou@fed27 repo]$ echo "================" >> README.md
+
+[bou@fed27 repo]$ git add README.md
+[bou@fed27 repo]$ git commit -m "First commit on airport info app"
+[master (root-commit) 7260122] First commit on airport info app
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+[bou@fed27 repo]$ git config --global user.email "vinorda@gmail.com"
+[bou@fed27 repo]$ git config --global user.name "launda"
+
+[bou@fed27 repo]$ git push origin master
+Username for 'https://github.com': launda
+Password for 'https://launda@github.com': 
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 237 bytes | 237.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/launda/taf_intel_app.git
+ * [new branch]      master -> master
+
+
+[bou@fed27 repo]$ ls -altr
+total 1
+drwxrwxr-x. 1 bou bou 144 Aug 29 21:56 ..
+drwxrwxr-x. 1 bou bou 248 Aug 29 21:57 .
+-rw-rw-r--. 1 bou bou  34 Aug 29 21:57 README.md
+drwxrwxr-x. 1 bou bou 544 Aug 29 21:58 .git
+
+
+[bou@fed27 repo]$ ls -altr .git
+total 4
+drwxrwxr-x. 1 bou bou 536 Aug 29 21:56 hooks
+drwxrwxr-x. 1 bou bou 144 Aug 29 21:56 info
+drwxrwxr-x. 1 bou bou   0 Aug 29 21:56 branches
+-rw-rw-r--. 1 bou bou  73 Aug 29 21:56 description
+-rw-rw-r--. 1 bou bou  23 Aug 29 21:56 HEAD
+-rw-rw-r--. 1 bou bou 206 Aug 29 21:56 config
+drwxrwxr-x. 1 bou bou 248 Aug 29 21:57 ..
+-rw-rw-r--. 1 bou bou 137 Aug 29 21:58 index
+-rw-rw-r--. 1 bou bou  33 Aug 29 21:58 COMMIT_EDITMSG
+drwxrwxr-x. 1 bou bou 504 Aug 29 21:58 objects
+drwxrwxr-x. 1 bou bou 240 Aug 29 21:58 logs
+drwxrwxr-x. 1 bou bou 544 Aug 29 21:58 .
+drwxrwxr-x. 1 bou bou 336 Aug 29 21:59 refs
+
+
+
+[bou@fed27 repo]$ touch app.py
+[bou@fed27 repo]$ vi app.py
+[bou@fed27 repo]$  python app.py
+
+* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 723-538-842
+127.0.0.1 - - [29/Aug/2018 22:06:20] "GET / HTTP/1.1" 404 -
+127.0.0.1 - - [29/Aug/2018 22:06:20] "GET /favicon.ico HTTP/1.1" 404 -
+
+404 no route to host - url "/" not found on server ....
+
+[bou@fed27 repo]$ mkdir templates
+[bou@fed27 repo]$ touch templates/index.html  # edit put sthg there
+
+[bou@fed27 repo]$  python app.py
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 723-538-842
+127.0.0.1 - - [29/Aug/2018 22:09:39] "GET / HTTP/1.1" 200 -
+
+save your work by returning to the command line and committing these changes to your Git repository.
+# Using "." is a trick that will quickly stage *all* files you'vehanged.
+
+[bou@fed27 repo]$  git add . 
+
+[bou@fed27 repo]$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   app.py
+	new file:   templates/index.html
+
+
+[bou@fed27 repo]$ git commit -m "Flask app.py and first template"
+[master b32bcbe] Flask app.py and first template
+ 2 files changed, 14 insertions(+)
+ create mode 100644 app.py
+ create mode 100644 templates/index.html
+
+[bou@fed27 repo]$ git status
+On branch master
+nothing to commit, working tree clean
+
+
+Push it up to GitHub and check out the changes there
+
+[bou@fed27 repo]$ git push origin master
+Username for 'https://github.com': launda
+Password for 'https://launda@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 572 bytes | 572.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/launda/taf_intel_app.git
+   7260122..b32bcbe  master -> master
+
+
+modify - update index.html
+
+[bou@fed27 repo]$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   templates/index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+[bou@fed27 repo]$ git add templates/index.html
+[bou@fed27 repo]$ git commit -m "Real HTML"
+[master baffc55] Real HTML
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+
+[bou@fed27 repo]$ git push origin master
+Username for 'https://github.com': launda
+Password for 'https://launda@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 392 bytes | 392.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/launda/taf_intel_app.git
+   b32bcbe..baffc55  master -> master
+
+
+[bou@fed27 repo]$ mkdir static
+[bou@fed27 repo]$ # copy  minim.xls and pca.txt to statis folder 
+[bou@fed27 repo]$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	static/
+
+nothing added to commit but untracked files present (use "git add" to track)
+[bou@fed27 repo]$ git add static
+[bou@fed27 repo]$ git commit -m "Added source data from aviation database"
+[master b53e193] Added source data from aviation database
+ 2 files changed, 798 insertions(+)
+ create mode 100644 static/minima.xls
+ create mode 100644 static/pca.txt
+[bou@fed27 repo]$ git push origin master
+lUsername for 'https://github.com':launda
+Password for 'https://launda@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 30.78 KiB | 3.42 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/launda/taf_intel_app.git
+   baffc55..b53e193  master -> master
+
+
+
+

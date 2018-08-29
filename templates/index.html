@@ -15,7 +15,8 @@
                 <th>Location</th>
             </tr>
             {% for obj in object_list %}
-            <tr>
+            <tr> 
+            	<!-- add a hyperlink to each detail page to the table -->
                 <td><a href="{{ obj.LOC_ID}}/">{{ obj.Location}}</a></td>
                 <td>{{ obj.AREA }}</td>
                 <td>{{ obj.Lat }}</td>
