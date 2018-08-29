@@ -2,6 +2,32 @@
 <html lang="en">
     <head></head>
     <body>
-        <h1>Deaths during the L.A. riots</h1>
+        <h1>Airports in Victoria Australia</h1>
+        <table border=1 cellpadding=7>
+            <tr>
+                <th>Airport_ID</th>
+                <th>Area</th>
+                <th>Lat</th>
+                <th>Long</th>
+                <th>Type</th>
+                <th>Reg</th>
+                <th>State</th>
+                <th>Location</th>
+            </tr>
+            {% for obj in object_list %}
+            <tr>
+                <td>{{ obj.LOC_ID }}</td>
+                <td>{{ obj.AREA }}</td>
+                <td>{{ obj.Lat }}</td>
+                <td>{{ obj.Long }}</td>
+                <td>{{ obj.Type }}</td>
+                <td>{{ obj.Reg }}</td>
+                <td>{{ obj.State }}</td>
+                <td>{{ obj.Location }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <!--<p>{% include 'airports.html' %}</p>-->
     </body>
 </html>
