@@ -16,14 +16,13 @@
             </tr>
             {% for obj in object_list %}
             <tr>
-                <td>{{ obj.LOC_ID }}</td>
+                <td><a href="{{ obj.LOC_ID}}/">{{ obj.Location}}</a></td>
                 <td>{{ obj.AREA }}</td>
                 <td>{{ obj.Lat }}</td>
                 <td>{{ obj.Long }}</td>
                 <td>{{ obj.Type }}</td>
                 <td>{{ obj.Reg }}</td>
                 <td>{{ obj.State }}</td>
-                <td>{{ obj.Location }}</td>
             </tr>
             {% endfor %}
         </table>
