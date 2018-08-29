@@ -11,21 +11,20 @@ app = Flask(__name__)
 
 
 def get_csv():
-	airports = get_avlocs().reset_index()
-	# get only those in VIC
-	# airports = airports.loc[airports['State'].str.contains('VIC'),]
-
+    airports = get_avlocs().reset_index()
+    # get only those in VIC
+    # airports = airports.loc[airports['State'].str.contains('VIC'),]
     # convert DF .to_dict() as we can't pass pandas DF to jinja2 templates
-	# 'records' works as it gets rid of row index values for each column
+    # 'records' works as it gets rid of row index values for each column
 
     # another option is convert DF .to_html()
     # But less html control as it converts as whole blocl to html
-	with open(os.path.join(cur_dir,'templates', 'airports.html'), 'w') as ob:
-		airports.to_html(ob,bold_rows=True,
+    with open(os.path.join(cur_dir,'templates', 'airports.html'), 'w') as ob:
+        airports.to_html(ob,bold_rows=True,
             border=4, col_space=10,justify='right',escape=False)
 
-	airports = airports.to_dict(orient='records')
-	return airports
+    airports = airports.to_dict(orient='records')
+    return airports
 
 
 @app.route("/")
