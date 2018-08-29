@@ -1,0 +1,798 @@
+
+LOC_ID AREA LOCATION_NAME                          Lat       Long Type Reg State
+------ ---- -------------------------------- --------- ---------- ---- --- -----
+YABF     43 ABERFOYLE                        -21.67500  145.26667 ALA  YB  QLD
+ABVUV    80 ABVUV                            -12.51667  129.43333 WPT  YB  NT
+YPAD     50 ADELAIDE                         -34.94496  138.53068 AD   YM  SA
+YABA     63 ALBANY                           -34.94344  117.80890 AD   YM  WA
+YMAY     22 ALBURY                           -36.06764  146.95815 AD   YM  NSW
+ALBUT    50 ALBUT                            -35.68804  139.34795 WPT  YM  SA
+YADG     50 ALDINGA                          -35.28897  138.49331 ALA  YM  SA
+ALEGO    86 ALEGO                            -10.64053  125.13354 WPT  YB  OTH
+YBAS     85 ALICE SPRINGS                    -23.80825  133.90089 AD   YM  NT
+YAPH     41 ALPHA                            -23.64598  146.58368 AD   YB  QLD
+YALT     50 ALTHORPE ISLAND                  -35.35000  136.86667 ALA  YM  SA
+ALTIR    51 ALTIR                            -32.66000  140.50333 WPT  YM  SA
+YAMT     52 AMATA                            -26.09730  131.20268 ALA  YM  SA
+YAMB     40 AMBERLEY                         -27.64066  152.71182 AD   YB  QLD
+YADO     85 ANDADO                           -25.41083  135.29056 ALA  YM  NT
+ANJJO    86 ANJJO                            -12.93647  125.62574 WPT  YB  WA
+YANK     52 ANNA CREEK                       -28.89733  136.17050 ALA  YM  SA
+YAPA     68 ANNA PLAINS HS                   -19.25000  121.51667 ALA  YB  WA
+YANL     80 ANTHONY LAGOON                   -17.97563  135.53817 ALA  YB  NT
+APOMA    22 APOMA                            -29.89796  142.68154 WPT  YM  NSW
+YAMC     43 ARAMAC                           -22.95939  145.25256 ALA  YB  QLD
+YARA     30 ARARAT                           -37.30936  142.98860 AD   YM  VIC
+YBAF     40 ARCHERFIELD                      -27.57034  153.00803 AD   YB  QLD
+YARD     84 ARGADARGADA                      -21.67639  136.67778 ALA  YB  NT
+YARG     69 ARGYLE                           -16.63684  128.45134 AD   YB  WA
+YARM     20 ARMIDALE                         -30.52818  151.61709 AD   YB  NSW
+ARONO    50 ARONO                            -34.44167  137.88333 WPT  YM  SA
+YARY     41 ARRABURY                         -26.69057  141.04712 ALA  YB  QLD
+ARRAN    21 ARRAN                            -35.83757  147.63938 WPT  YM  NSW
+AWP      80 ARROWSMITH PT                    -13.25000  136.45000 LDM  YB  NT
+YAHD     68 ASHBURTON DOWNS                  -23.40583  117.08250 ALA  YM  WA
+YASF     20 ASHFORD                          -29.31670  151.05612 ALA  YB  NSW
+YATN     45 ATHERTON                         -17.26203  145.51441 ALA  YB  QLD
+YAUG     63 AUGUSTA                          -34.33000  115.15667 ALA  YM  WA
+YAGD     45 AUGUSTUS DOWNS                   -18.51550  139.87874 ALA  YB  QLD
+YAUR     45 AURUKUN                          -13.35384  141.72082 AD   YB  QLD
+YAUV     80 AUVERGNE STN                     -15.69333  130.00833 ALA  YB  NT
+YMAV     30 AVALON                           -38.03940  144.46948 AD   YM  VIC
+AVBEG    21 AVBEG                            -34.82839  149.04213 WPT  YM  NSW
+YAVD     84 AVON DOWNS                       -20.03917  137.52167 ALA  YB  NT
+YAYE     85 AYERS ROCK                       -25.18614  130.97556 AD   YM  NT
+YAYR     44 AYR                              -19.59633  147.32462 ALA  YB  QLD
+YBNS     30 BAIRNSDALE                       -37.88751  147.56764 AD   YM  VIC
+YBVA     50 BALAKLAVA                        -34.08500  138.33500 ALA  YM  SA
+YBGO     83 BALGO HILL                       -20.14827  127.97398 AD   YB  WA
+YBAL     62 BALLADONIA                       -32.33333  123.62500 ALA  YM  WA
+YBLT     30 BALLARAT                         -37.51159  143.79123 AD   YM  VIC
+YLLE     41 BALLERA                          -27.40833  141.80833 AD   YB  QLD
+YBNA     20 BALLINA/BYRON GATEWAY            -28.83378  153.56244 AD   YB  NSW
+YBRN     22 BALRANALD                        -34.62349  143.57824 AD   YM  NSW
+YBMY     80 BAMYILI                          -14.51965  132.88343 ALA  YB  NT
+BANCA    22 BANCA                            -30.83333  141.74333 WPT  YM  NSW
+YSBK     20 BANKSTOWN                        -33.92437  150.98838 AD   YM  NSW
+YBAD     22 BARADINE                         -30.95500  149.09167 ALA  YB  NSW
+YBAB     40 BARALABA                         -24.18667  149.84500 ALA  YB  QLD
+YBAR     41 BARCALDINE                       -23.56514  145.30671 AD   YB  QLD
+BRR      22 BARRINGUN                        -29.01667  145.70000 LDM  YM  NSW
+YBWX     68 BARROW ISLAND                    -20.86452  115.40606 AD   YM  WA
+KALK     30 BASS STRAIT                      -39.50000  142.50000 LDM  YM  TAS
+YBCR     80 BATCHELOR                        -13.06111  131.02500 ALA  YB  NT
+YBTH     21 BATHURST                         -33.40944  149.65194 AD   YM  NSW
+YBTI     80 BATHURST ISLAND                  -11.76909  130.61974 AD   YB  NT
+YBGB     69 BEAGLE BAY                       -16.98333  122.65000 ALA  YB  WA
+YBIE     41 BEDOURIE                         -24.34612  139.46022 AD   YB  QLD
+BELKI    86 BELKI                            -11.68680  128.46679 WPT  YB  NT
+YBLA     30 BENALLA                          -36.55403  146.00907 AD   YM  VIC
+YBCB     60 BENCUBBIN                        -30.83333  117.86667 ALA  YM  WA
+YBDG     30 BENDIGO                          -36.73941  144.32985 AD   YM  VIC
+BENDO    50 BENDO                            -35.24338  139.51014 WPT  YM  SA
+YBEO     41 BETOOTA                          -25.69500  140.73667 ALA  YB  QLD
+YBCO     70 BICHENO                          -41.91667  148.26667 ALA  YM  TAS
+BIDAP    66 BIDAP                            -24.40126  123.24564 WPT  YM  WA
+BIGUP    69 BIGUP                            -18.92543  123.32964 WPT  YB  WA
+BILIN    51 BILIN                            -29.89500  136.20333 WPT  YM  SA
+YBLB     65 BILLABONG ROAD HOUSE             -26.81667  114.61667 ALA  YM  WA
+YBIL     69 BILLILUNA                        -19.54042  127.65547 ALA  YB  WA
+YBIA     20 BINGARA                          -29.81667  150.53333 ALA  YB  NSW
+YBDV     41 BIRDSVILLE                       -25.89742  139.34760 AD   YB  QLD
+YBCK     41 BLACKALL                         -24.42789  145.42855 AD   YB  QLD
+YBTR     40 BLACKWATER                       -23.60306  148.80683 ALA  YB  QLD
+BOBET    64 BOBET                            -29.01282  124.70250 WPT  YM  WA
+BOING    83 BOING                            -22.24000  127.25056 WPT  YB  WA
+YBLL     41 BOLLON                           -28.05367  147.47845 ALA  YB  QLD
+YBOM     21 BOMBALA                          -36.90500  149.18333 ALA  YM  NSW
+YBGD     68 BOOLGEEDA                        -22.54099  117.26955 AD   YM  WA
+YBOR     50 BORDERTOWN                       -36.27167  140.72167 ALA  YM  SA
+YBRL     80 BORROLOOLA                       -16.07527  136.30234 ALA  YB  NT
+YBOU     43 BOULIA                           -22.91333  139.89972 AD   YB  QLD
+YBKE     22 BOURKE                           -30.03904  145.95163 AD   YM  NSW
+YBWN     44 BOWEN                            -20.01789  148.21527 AD   YB  QLD
+BWL      21 BOWRAL                           -34.47920  150.41810 LDM  YM  NSW
+YBOP     63 BOYUP BROOK                      -33.89667  116.45000 ALA  YM  WA
+YBAO     21 BRAIDWOOD (NSW)                  -35.45000  149.85000 ALA  YM  NSW
+YBRW     22 BREWARRINA                       -29.97401  146.81675 AD   YM  NSW
+YBTD     41 BRIGHTON DOWNS                   -23.35000  141.53333 ALA  YB  QLD
+YBBN     40 BRISBANE                         -27.38413  153.11757 AD   YB  QLD
+YBWW     40 BRISBANE WEST WELLCAMP           -27.55852  151.79415 AD   YB  QLD
+YBHI     22 BROKEN HILL                      -32.00146  141.47163 AD   YM  NSW
+YBRM     69 BROOME                           -17.94958  122.22774 AD   YB  WA
+YBNY     84 BRUNCHILLY STN                   -18.86917  134.46111 ALA  YB  NT
+YBRU     84 BRUNETTE DOWNS                   -18.63944  135.93889 ALA  YB  NT
+YBYI     70 BRUNY ISLAND                     -43.24500  147.37000 ALA  YM  TAS
+BUCN     84 BUCHANAN HILLS                   -18.90000  131.08333 LDM  YB  NT
+YBUN     63 BUNBURY                          -33.37810  115.67705 AD   YM  WA
+YBUD     40 BUNDABERG                        -24.90376  152.31851 AD   YB  QLD
+BUNGY    50 BUNGY                            -37.48500  138.33000 WPT  YM  SA
+BUNNY    64 BUNNY                            -27.54682  127.20360 WPT  YM  WA
+YBKT     45 BURKETOWN                        -17.74850  139.53451 AD   YB  QLD
+BURR     50 BURRA                            -33.68333  138.93333 LDM  YM  SA
+BUGA     21 BURRAGA                          -33.88333  149.56667 LDM  YM  NSW
+YBRJ     22 BURREN JUNCTION                  -30.15861  148.97419 ALA  YB  NSW
+YBLN     63 BUSSELTON                        -33.68729  115.40026 AD   YM  WA
+YBYR     22 BYROCK                           -30.66667  146.40000 ALA  YM  NSW
+YXBY     20 BYRON BAY HOSPITAL               -28.65000  153.61667 HLS  YB  NSW
+YCDH     52 CADNEY HS                        -27.90675  134.05592 ALA  YM  SA
+YCAG     62 CAIGUNA                          -32.28033  125.47767 ALA  YM  WA
+YBCS     45 CAIRNS                           -16.88597  145.75527 AD   YB  QLD
+YCBL     69 CAMBALLIN                        -17.96667  124.16667 ALA  YB  WA
+YSCN     21 CAMDEN                           -34.04019  150.68722 AD   YM  NSW
+YCFD     84 CAMFIELD STN                     -17.02173  131.32653 ALA  YB  NT
+YCMW     43 CAMOOWEAL                        -19.91167  138.12500 AD   YB  QLD
+CLLN     70 CAMPBELLTOWN                     -41.93333  147.49167 VFC  YM  TAS
+CAMUS    70 CAMUS                            -40.00003  145.51266 WPT  YM  TAS
+YSCB     21 CANBERRA                         -35.30682  149.19503 AD   YM  ACT
+CANDY    98 CANDY                            -36.42500  135.00000 WPT  YM  SA
+YCBO     50 CAPE BORDA                       -35.75500  136.59833 HLS  YM  SA
+CAJE     50 CAPE JERVIS                      -35.60611  138.09194 TSP  YM  SA
+YCTY     30 CAPE OTWAY                       -38.85778  143.51250 HLS  YM  VIC
+CPLD     70 CAPE PORTLAND                    -40.75000  147.95000 VFR  YM  TAS
+CPHE     63 CAPE RICHE                       -34.60000  118.76667 LDM  YM  WA
+CAPT     21 CAPTAINS FLAT                    -35.59111  149.44528 VFA  YM  NSW
+CARDO    80 CARDO                            -13.01333  137.94833 WPT  YB  NT
+YCRA     22 CARINDA                          -30.45825  147.70942 ALA  YB  NSW
+YCAR     65 CARNARVON                        -24.88068  113.67209 AD   YM  WA
+CARON    44 CARON                            -22.35833  149.86500 WPT  YB  QLD
+YCTN     30 CASTERTON                        -37.61333  141.36167 ALA  YM  VIC
+YCAC     84 CATTLE CREEK                     -17.60000  131.53333 ALA  YB  NT
+YCDU     53 CEDUNA                           -32.13060  133.70975 AD   YM  SA
+CAO      53 CEDUNA OBSERVATORY               -31.86667  133.80000 LDM  YM  SA
+CELIA    64 CELIA                            -24.37131  127.32399 WPT  YM  WA
+YCNY     45 CENTURY MINE                     -18.75333  138.70667 AD   YB  QLD
+YBCV     41 CHARLEVILLE                      -26.41331  146.26256 AD   YB  QLD
+YCYR     69 CHARNLEY RIVER                   -16.73333  125.43917 ALA  YB  WA
+YCHT     44 CHARTERS TOWERS                  -20.04314  146.27298 AD   YB  QLD
+CHERY    45 CHERY                            -12.53333  140.00000 WPT  YB  QLD
+YCGO     45 CHILLAGOE                        -17.14073  144.52833 AD   YB  QLD
+YCCA     40 CHINCHILLA                       -26.76934  150.61655 AD   YB  QLD
+CHOMP    30 CHOMP                            -38.76500  148.69167 WPT  YM  VIC
+YCHK     68 CHRISTMAS CREEK                  -22.35582  119.64262 AD   YM  WA
+YCMT     44 CLERMONT                         -22.77294  147.62063 AD   YB  QLD
+YCEE     50 CLEVE                            -33.70983  136.50475 AD   YM  SA
+YCFH     52 CLIFTON HILLS                    -27.01833  138.89167 ALA  YM  SA
+YCCY     43 CLONCURRY                        -20.66868  140.50438 AD   YB  QLD
+CLOY     43 CLONEYS CREEK                    -20.21667  142.60000 LDM  YB  QLD
+YUNY     41 CLUNY                            -24.51148  139.61720 ALA  YB  QLD
+YCBA     22 COBAR                            -31.53833  145.79389 AD   YM  NSW
+YCOE     45 COEN                             -13.76208  143.11667 AD   YB  QLD
+YCFS     20 COFFS HARBOUR                    -30.32058  153.11633 AD   YB  NSW
+YOLA     30 COLAC                            -38.28639  143.67972 ALA  YM  VIC
+YCBR     22 COLLARENEBRI                     -29.52205  148.58209 ALA  YB  NSW
+YCSV     44 COLLINSVILLE                     -20.59620  147.85996 ALA  YB  QLD
+YCDO     22 CONDOBOLIN                       -33.06438  147.20910 AD   YM  NSW
+YCBP     52 COOBER PEDY                      -29.04000  134.72086 AD   YM  SA
+YCOO     80 COOINDA                          -12.90271  132.53232 ALA  YB  NT
+YOOK     53 COOK                             -30.61833  130.40600 ALA  YM  SA
+YCKN     45 COOKTOWN                         -15.44466  145.18431 AD   YB  QLD
+CLMN     22 COOLAMON                         -34.81667  147.20000 VFA  YM  NSW
+YCOM     21 COOMA                            -36.30045  148.97381 AD   YM  NSW
+YCBB     20 COONABARABRAN                    -31.33259  149.26713 AD   YB  NSW
+YCNM     22 COONAMBLE                        -30.98339  148.37564 AD   YB  NSW
+YCNN     63 COONANA                          -31.03333  123.15833 ALA  YM  WA
+YCTM     21 COOTAMUNDRA                      -34.62432  148.03577 AD   YM  NSW
+CORKY    20 CORKY                            -32.49854  150.91248 WPT  YB  NSW
+YCOP     50 CORNY PT                         -34.91667  137.06667 HLS  YM  SA
+YCOR     30 COROWA                           -35.99033  146.35130 AD   YM  NSW
+YCIG     60 CORRIGIN                         -32.34167  117.81333 ALA  YM  WA
+YCRG     21 CORRYONG                         -36.18290  147.88765 AD   YM  VIC
+YCWL     50 COWELL                           -33.66727  136.89171 ALA  YM  SA
+YCWR     21 COWRA                            -33.84483  148.64901 AD   YM  NSW
+CML      70 CRADLE MOUNTAIN LODGE            -41.59486  145.92831 LDM  YM  TAS
+CRAVN    20 CRAVN                            -32.12667  151.76667 WPT  YB  NSW
+CRAY     50 CRAYFISH                         -38.58333  139.75000 LDM  YM  SA
+YCRY     45 CROYDON                          -18.21757  142.25297 ALA  YB  QLD
+YCUE     65 CUE                              -27.44677  117.91863 ALA  YM  WA
+YCUN     60 CUNDERDIN                        -31.62222  117.21667 AD   YM  WA
+YCMU     41 CUNNAMULLA                       -28.03006  145.62212 AD   YB  QLD
+YCIN     69 CURTIN                           -17.58145  123.82819 AD   YB  WA
+YCSP     85 CURTIN SPRINGS                   -25.33311  131.75864 ALA  YM  NT
+YDAJ     43 DAJARRA                          -21.70458  139.54025 ALA  YB  QLD
+YDAY     40 DALBY                            -27.15529  151.26729 ALA  YB  QLD
+YDMN     80 DALY RIVER MISSION               -13.75139  130.69000 ALA  YB  NT
+YDLW     80 DALY WATERS                      -16.26667  133.36667 ALA  YB  NT
+YPDN     80 DARWIN                           -12.41460  130.87679 AD   YB  NT
+YDPD     41 DAVENPORT DOWNS                  -24.14553  141.11218 ALA  YB  QLD
+YDLI     30 DEAL ISLAND                      -39.49722  147.32222 ALA  YM  TAS
+YDGU     66 DEGRUSSA                         -25.55760  119.28750 AD   YM  WA
+DEJAY    20 DEJAY                            -28.84126  150.89554 WPT  YB  NSW
+YDMR     80 DELAMERE STN                     -15.62010  131.63681 ALA  YB  NT
+YDEG     21 DELEGATE                         -37.06158  148.94130 ALA  YM  NSW
+YDLT     45 DELTA DOWNS                      -16.99167  141.31667 ALA  YB  QLD
+YDLQ     30 DENILIQUIN                       -35.55933  144.94641 AD   YM  NSW
+YDBY     69 DERBY                            -17.37010  123.66065 AD   YB  WA
+DWB      70 DERWENT BRIDGE                   -42.13333  146.23333 LDM  YM  TAS
+DVM      84 DEVILS MARBLES                   -20.53333  134.25000 LDM  YB  NT
+YDPO     70 DEVONPORT                        -41.16973  146.43026 AD   YM  TAS
+YDBI     41 DIRRANBANDI                      -28.59167  148.21667 AD   YB  QLD
+YDVR     85 DOCKER RIVER                     -24.85833  129.12333 ALA  YM  NT
+YDRA     60 DONGARA                          -29.30000  114.91667 ALA  YM  WA
+YDMG     45 DOOMADGEE                        -17.94032  138.82154 AD   YB  QLD
+YDGN     69 DOONGAN                          -15.38598  126.30498 ALA  YB  WA
+DOORA    20 DOORA                            -31.90667  149.08861 WPT  YB  NSW
+YDOR     45 DORUNDA                          -16.55382  141.82392 ALA  YB  QLD
+DOTOP    61 DOTOP                            -32.10500  119.08000 WPT  YM  WA
+DLP      40 DOUBLE ISLAND PT                 -25.91667  153.18333 LDM  YB  QLD
+YDON     60 DOWERIN                          -31.17500  117.04167 ALA  YM  WA
+DAG      40 DUARINGA                         -23.72055  149.66899 LDM  YB  QLD
+YSDU     22 DUBBO                            -32.21673  148.57478 AD   YM  NSW
+YDBR     45 DUNBAR                           -16.05000  142.40000 ALA  YB  QLD
+YDRH     41 DURHAM DOWNS                     -27.07500  141.90000 ALA  YB  QLD
+YDRI     41 DURRIE                           -25.68467  140.22331 ALA  YB  QLD
+YDYS     44 DYSART                           -22.62221  148.36383 ALA  YB  QLD
+YERH     66 EARAHEEDY                        -25.60000  121.58333 ALA  YM  WA
+YMES     30 EAST SALE                        -38.09894  147.14956 AD   YM  VIC
+YECH     30 ECHUCA                           -36.15727  144.76196 AD   YM  VIC
+EDP      70 EDDYSTONE PT                     -40.99833  148.34833 LDM  YM  TAS
+YEDE     30 EDENHOPE                         -37.01667  141.26667 ALA  YM  VIC
+YPED     50 EDINBURGH                        -34.70258  138.62081 AD   YM  SA
+YELD     80 ELCHO ISLAND                     -12.01934  135.57065 AD   YB  NT
+YEGS     44 ELGIN DOWNS                      -22.00000  146.91667 ALA  YB  QLD
+YELL     84 ELLIOTT                          -17.52944  133.52972 ALA  YB  NT
+YELN     53 ELLISTON                         -33.63833  134.90000 ALA  YM  SA
+YEML     41 EMERALD                          -23.56763  148.17920 AD   YB  QLD
+YEEB     60 ENEABBA                          -29.83308  115.24640 ALA  YM  WA
+ENPIT    83 ENPIT                            -23.36638  126.48843 WPT  YM  WA
+ENTRE    53 ENTRE                            -31.53412  130.94910 WPT  YM  SA
+YERN     52 ERNABELLA                        -26.26258  132.18176 ALA  YM  SA
+YEMG     41 EROMANGA                         -26.70462  143.26202 ALA  YB  QLD
+YESP     63 ESPERANCE                        -33.68444  121.82264 AD   YM  WA
+YMEN     30 ESSENDON                         -37.72809  144.90182 AD   YM  VIC
+YECL     62 EUCLA                            -31.71667  128.88333 ALA  YM  WA
+YEDD     50 EUDUNDA                          -34.18117  139.08917 HLS  YM  SA
+YEUO     41 EULO                             -28.16907  145.04163 ALA  YB  QLD
+YEVD     20 EVANS HEAD                       -29.09329  153.42037 ALA  YB  NSW
+FAGIN    98 FAGIN                            -33.88500  131.50000 WPT  YM  SA
+FDP      70 FEDERATION PEAK                  -43.26667  146.45000 LDM  YM  TAS
+YFNE     85 FINKE                            -25.59778  134.58222 ALA  YM  NT
+YFTZ     69 FITZROY CROSSING                 -18.18200  125.55867 AD   YB  WA
+FLIKI    70 FLIKI                            -40.00000  146.39333 WPT  YM  TAS
+YFLI     70 FLINDERS ISLAND                  -40.09129  147.99267 AD   YM  TAS
+YFLO     69 FLORA VALLEY                     -18.28333  128.41667 ALA  YB  WA
+YFBS     22 FORBES                           -33.36362  147.93486 AD   YM  NSW
+YFRT     62 FORREST                          -30.83806  128.11509 AD   YM  WA
+FOWB     53 FOWLERS BAY                      -31.98333  132.43333 TSP  YM  SA
+YFRG     52 FREGON                           -26.77583  132.01750 ALA  YM  SA
+YGPT     80 GARDEN PT                        -11.39908  130.42524 AD   YB  NT
+YGSC     65 GASCOYNE JUNCTION                -25.05000  115.20000 ALA  YM  WA
+YGAY     40 GAYNDAH                          -25.61522  151.62077 AD   YB  QLD
+YGTN     43 GEORGETOWN (QLD)                 -18.30333  143.53167 AD   YB  QLD
+YGEL     60 GERALDTON                        -28.79621  114.70750 AD   YM  WA
+YGIB     69 GIBB RIVER                       -16.41872  126.44603 ALA  YB  WA
+YGLS     64 GILES                            -25.05000  128.30000 ALA  YM  WA
+YGIL     22 GILGANDRA                        -31.69695  148.63607 ALA  YB  NSW
+YGIG     60 GINGIN                           -31.46515  115.86327 AD   YM  WA
+YGLA     40 GLADSTONE                        -23.86981  151.22274 AD   YB  QLD
+YGLI     20 GLEN INNES                       -29.67500  151.68944 AD   YB  NSW
+YGLY     66 GLENAYLE HS                      -25.28333  122.05000 ALA  YM  WA
+YGLE     41 GLENGYLE                         -24.80833  139.60000 ALA  YB  QLD
+GLC      51 GLENORCHY                        -31.91667  139.78333 LDM  YM  SA
+YGLO     43 GLENORMISTON                     -22.88897  138.82428 ALA  YB  QLD
+YBCG     40 GOLD COAST                       -28.16444  153.50480 AD   YB  QLD
+YGDA     22 GOODOOGA                         -29.07344  147.37618 AD   YB  NSW
+YGWA     50 GOOLWA                           -35.48188  138.75137 ALA  YM  SA
+YGDI     40 GOONDIWINDI                      -28.52128  150.32019 AD   YB  QLD
+YGLB     21 GOULBURN                         -34.81022  149.72650 AD   YM  NSW
+YPGV     80 GOVE                             -12.26931  136.81832 AD   YB  NT
+YGFN     20 GRAFTON                          -29.75944  153.03000 AD   YB  NSW
+YGDS     45 GREGORY DOWNS                    -18.62546  139.23361 ALA  YB  QLD
+YGGS     43 GREGORY SPRINGS                  -19.71667  144.36667 ALA  YB  QLD
+YGTH     22 GRIFFITH                         -34.25097  146.06727 AD   YM  NSW
+YGTE     80 GROOTE EYLANDT                   -13.97334  136.46083 AD   YB  NT
+GUGAB    51 GUGAB                            -29.68523  139.83312 WPT  YM  SA
+GUGUK    45 GUGUK                            -14.94126  138.87668 WPT  YB  QLD
+GULFF    45 GULFF                            -14.36667  140.00000 WPT  YB  QLD
+GUNAM    69 GUNAM                            -14.70068  125.20352 WPT  YB  WA
+GDG      21 GUNDAGAI                         -35.06111  148.10278 VFA  YM  NSW
+YGDH     20 GUNNEDAH                         -30.96108  150.25063 AD   YB  NSW
+YGYM     40 GYMPIE                           -26.28288  152.70195 ALA  YB  QLD
+YHAA     85 HAASTS BLUFF                     -23.45049  131.85148 ALA  YM  NT
+YHLC     69 HALLS CREEK                      -18.23396  127.66960 AD   YB  WA
+YHML     30 HAMILTON                         -37.64876  142.06524 AD   YM  VIC
+YBHM     44 HAMILTON ISLAND                  -20.35816  148.95164 AD   YB  QLD
+HANKY    45 HANKY                            -15.14333  138.34500 WPT  YB  NT
+HATF     22 HATFIELD                         -33.70000  143.65000 LDM  YM  NSW
+YHAW     51 HAWKER                           -31.85465  138.46823 ALA  YM  SA
+YHAY     22 HAY                              -34.53142  144.82967 AD   YM  NSW
+YHMB     85 HERMANNSBURG                     -23.92790  132.81253 ALA  YM  NT
+YHBA     40 HERVEY BAY                       -25.31881  152.88030 AD   YB  QLD
+YHLS     22 HILLSTON                         -33.49360  145.52355 ALA  YM  NSW
+YMHB     70 HOBART                           -42.83617  147.51024 AD   YM  TAS
+YHOV     80 HODGSON RIVER                    -15.51667  134.06667 ALA  YB  NT
+HOKOR    80 HOKOR                            -13.62167  138.00000 WPT  YB  NT
+YHBK     21 HOLBROOK                         -35.68333  147.31667 ALA  YM  NSW
+YSHW     21 HOLSWORTHY                       -33.99513  150.95246 AD   YM  NSW
+HDP      63 HOOD PT                          -34.38333  119.56667 LDM  YM  WA
+YHOO     84 HOOKER CREEK                     -18.33586  130.64344 ALA  YB  NT
+YHPN     30 HOPETOUN                         -35.71535  142.35965 AD   YM  VIC
+HORD     84 HORDERN HILLS                    -20.65000  130.31667 LDM  YB  NT
+YHID     45 HORN ISLAND                      -10.58644  142.29003 AD   YB  QLD
+YHSM     30 HORSHAM                          -36.66969  142.17268 AD   YM  VIC
+YHKT     84 HUCKITTA                         -22.94389  135.44722 ALA  YM  NT
+YHUG     43 HUGHENDEN                        -20.81493  144.22520 AD   YB  QLD
+HRD      41 HUNGERFORD                       -29.00000  144.40000 LDM  YM  NSW
+HYDEN    63 HYDEN                            -32.45000  118.86667 TSP  YM  WA
+HYDRA    53 HYDRA                            -34.77167  135.00000 WPT  YM  SA
+IDOTO    86 IDOTO                            -11.51832  126.64678 WPT  YB  WA
+YIDR     85 IDRACOWRA STN                    -25.06667  133.73333 ALA  YM  NT
+YIFY     43 IFFLEY                           -18.90000  141.21667 ALA  YB  QLD
+IKUMA    86 IKUMA                            -10.43000  127.13500 WPT  YB  NT
+IDNA     85 INDIANA                          -23.33333  135.43333 LDM  YM  NT
+IDK      52 INDULKANA TOWNSHIP               -26.96583  133.32500 LDM  YM  SA
+YIGM     44 INGHAM                           -18.66061  146.15178 ALA  YB  QLD
+YINJ     41 INJUNE                           -25.85000  148.55000 ALA  YB  QLD
+YINN     52 INNAMINCKA                       -27.70000  140.73333 ALA  YM  SA
+YIFL     45 INNISFAIL                        -17.55858  146.01162 AD   YB  QLD
+YIVL     20 INVERELL                         -29.88831  151.14419 AD   YB  NSW
+YINW     84 INVERWAY                         -17.83910  129.63812 ALA  YB  NT
+IRONS    70 IRONS                            -41.77333  146.46167 WPT  YM  TAS
+YISF     41 ISISFORD                         -24.25913  144.42428 ALA  YB  QLD
+ISLAV    53 ISLAV                            -32.86046  132.34654 WPT  YM  SA
+ISB      62 ISRAELITE BAY                    -33.61667  123.88333 LDM  YM  WA
+YIVO     22 IVANHOE                          -32.88333  144.31000 ALA  YM  NSW
+IVPEM    62 IVPEM                            -32.52667  128.00000 WPT  YM  WA
+YJAB     80 JABIRU                           -12.65842  132.89309 AD   YB  NT
+YJVN     86 JABIRU VENTURE                   -11.93333  125.00000 HLS  YB  OTH
+YJAM     64 JAMESON                          -25.86333  127.67833 ALA  YM  WA
+YPJT     60 JANDAKOT                         -32.09745  115.88121 AD   YM  WA
+YJER     22 JERILDERIE                       -35.37000  145.72500 ALA  YM  NSW
+YJGP     63 JERRAMUNGUP                      -33.91667  118.90000 ALA  YM  WA
+YJIG     68 JIGGALONG MISSION                -23.36667  120.78333 ALA  YM  WA
+YJLC     43 JULIA CREEK                      -20.66837  141.72249 AD   YB  QLD
+YJDA     41 JUNDAH                           -24.83149  143.06542 ALA  YB  QLD
+YJNB     60 JURIEN BAY                       -30.30320  115.05525 ALA  YM  WA
+YKBR     60 KALBARRI                         -27.69201  114.25956 AD   YM  WA
+YPKG     61 KALGOORLIE-BOULDER               -30.78938  121.46173 AD   YM  WA
+YKKG     84 KALKGURUNG                       -17.43195  130.80794 AD   YB  NT
+KALUG    85 KALUG                            -25.90000  136.72500 WPT  YM  NT
+YKAL     69 KALUMBURU                        -14.28803  126.63108 AD   YB  WA
+YKBL     61 KAMBALDA                         -31.19064  121.59836 ALA  YM  WA
+KAMBI    53 KAMBI                            -34.13488  135.33981 WPT  YM  SA
+YKML     43 KAMILEROI                        -19.37461  140.05606 ALA  YB  QLD
+YPKA     68 KARRATHA                         -20.71228  116.77328 AD   YM  WA
+YKMB     45 KARUMBA                          -17.45550  140.83167 AD   YB  QLD
+YKNG     63 KATANNING                        -33.70030  117.65330 AD   YM  WA
+KATAR    52 KATAR                            -26.39425  129.07355 WPT  YM  SA
+YKEB     60 KELLERBERRIN                     -31.61778  117.72389 ALA  YM  WA
+YKMP     20 KEMPSEY                          -31.07432  152.76965 AD   YB  NSW
+YKER     30 KERANG                           -35.75127  143.93937 AD   YM  VIC
+KERIN    45 KERIN                            -16.21000  141.29500 WPT  YB  QLD
+KIAN     21 KIANDRA                          -35.86667  148.50000 LDM  YM  NSW
+KDBF     83 KIDSON BLUFF                     -22.25000  125.03333 LDM  YM  WA
+YKID     44 KIDSTON                          -18.87069  144.17336 ALA  YB  QLD
+YKIL     84 KILDURK STN                      -16.43139  129.61417 ALA  YB  NT
+YKLE     80 KILLARNEY                        -16.25028  131.74694 ALA  YB  NT
+KIM      30 KILMORE                          -37.30000  144.95417 VFA  YM  VIC
+KMG      30 KILMORE GAP                      -37.30000  144.98333 LDM  YM  VIC
+YIMB     53 KIMBA                            -33.09961  136.45985 AD   YM  SA
+YKII     70 KING ISLAND                      -39.87748  143.87830 AD   YM  TAS
+YKRY     40 KINGAROY                         -26.58081  151.84101 AD   YB  QLD
+YKGA     53 KINGOONYA                        -30.91442  135.30719 ALA  YM  SA
+YKSC     50 KINGSCOTE/KANGAROO ISLAND        -35.71401  137.52133 AD   YM  SA
+YKIG     50 KINGSTON SE                      -36.82000  139.87000 ALA  YM  SA
+YKNT     85 KINTORE                          -23.26500  129.38500 ALA  YM  NT
+YKIR     84 KIRKIMBIE STN                    -17.77944  129.20389 ALA  YB  NT
+YKOJ     63 KOJONUP                          -33.75033  117.13583 ALA  YM  WA
+KONDO    51 KONDO                            -33.16333  140.45167 WPT  YM  SA
+YKLI     69 KOOLAN ISLAND                    -16.13056  123.77750 ALA  YB  WA
+KTG      80 KOOLATONG RIVER                  -13.08333  135.65000 LDM  YB  NT
+KOOM     53 KOOMOOLOOBOOKA CAVE              -31.48333  129.58333 LDM  YM  SA
+YKOW     45 KOWANYAMA                        -15.48559  141.75142 AD   YB  QLD
+KROWS    50 KROWS                            -36.83167  137.26167 WPT  YM  SA
+YPKU     69 KUNUNURRA                        -15.77804  128.70743 AD   YB  WA
+YLGB     69 LA GRANGE BAY                    -18.68333  121.80833 ALA  YB  WA
+YLCG     22 LAKE CARGELLIGO                  -33.27839  146.36926 AD   YM  NSW
+LDAP     68 LAKE DISAPPOINTMENT              -23.50000  122.66667 LDM  YM  WA
+LKEC     70 LAKE ECHO                        -42.16667  146.63333 LDM  YM  TAS
+YLEV     80 LAKE EVELLA                      -12.49901  135.80570 AD   YB  NT
+YLVD     53 LAKE EVERARD                     -31.74253  135.17312 ALA  YM  SA
+LEYN     52 LAKE EYRE NORTH                  -28.41667  137.30000 LDM  YM  SA
+LFRO     51 LAKE FROME                       -30.63333  139.86667 LDM  YM  SA
+LGEN     64 LAKE GILLEN                      -26.21667  124.60000 LDM  YM  WA
+LKIM     64 LAKE ILMA                        -29.25000  127.76667 LDM  YM  WA
+LKG      63 LAKE KING                        -33.08333  119.66667 LDM  YM  WA
+YLMQ     20 LAKE MACQUARIE AIRPORT           -33.06623  151.64805 ALA  YB  NSW
+LME      52 LAKE MAURICE                     -29.40000  130.95000 LDM  YM  SA
+LMWL     61 LAKE MINIGWAL                    -29.58333  123.16667 TSP  YM  WA
+YLKN     84 LAKE NASH                        -20.97917  137.91833 ALA  YB  NT
+LRAN     64 LAKE RASON                       -28.66667  124.28333 LDM  YM  WA
+LTL      64 LAKE THROSSELL                   -27.63333  124.08333 LDM  YM  WA
+LTRR     51 LAKE TORRENS                     -31.42167  138.08667 LDM  YM  SA
+WITE     84 LAKE WHITE                       -21.10000  129.05000 LDM  YB  NT
+YLAO     50 LAMEROO                          -35.36667  140.46667 ALA  YM  SA
+LSDW     69 LANSDOWNE                        -17.61500  126.74333 LDM  YB  WA
+YLTV     30 LATROBE VALLEY                   -38.20723  146.47031 AD   YM  VIC
+YMLT     70 LAUNCESTON                       -41.54530  147.21418 AD   YM  TAS
+YLRA     45 LAURA                            -15.55000  144.45000 ALA  YB  QLD
+YLVK     44 LAVARACK                         -19.32083  146.80194 HLS  YB  QLD
+YLTN     61 LAVERTON                         -28.61369  122.42396 AD   YM  WA
+YLAH     45 LAWN HILL                        -18.57639  138.58472 ALA  YB  QLD
+YPLM     68 LEARMONTH                        -22.23548  114.08854 AD   YM  WA
+YLGU     80 LEGUNE STN                       -15.21520  129.44488 ALA  YB  NT
+YLEC     51 LEIGH CREEK                      -30.59832  138.42596 AD   YM  SA
+YLST     61 LEINSTER                         -27.84340  120.70323 AD   YM  WA
+YLEO     61 LEONORA                          -28.87812  121.31465 AD   YM  WA
+LEYOX    22 LEYOX                            -34.25503  144.08826 WPT  YM  NSW
+YLRD     22 LIGHTNING RIDGE                  -29.45677  147.98451 AD   YB  NSW
+YLIS     20 LISMORE                          -28.82667  153.25750 AD   YB  NSW
+YLDL     69 LISSADELL                        -16.68333  128.56667 ALA  YB  WA
+YLZI     45 LIZARD ISLAND                    -14.67290  145.45423 ALA  YB  QLD
+YLHR     45 LOCKHART RIVER                   -12.78708  143.30469 AD   YB  QLD
+LOLLY    98 LOLLY                            -40.14523  150.58505 WPT  YM  OTH
+YLBD     69 LOMBADINA                        -16.51394  122.92521 ALA  YB  WA
+YLRE     41 LONGREACH                        -23.43417  144.28026 AD   YB  QLD
+YLGN     62 LOONGANA                         -30.94167  127.03000 ALA  YM  WA
+YLHI     24 LORD HOWE ISLAND                 -31.53835  159.07719 AD   YB  NSW
+LORNE    41 LORNE                            -25.54167  147.16333 WPT  YB  QLD
+YLOR     43 LORRAINE                         -19.00639  139.89944 ALA  YB  QLD
+LOSKU    20 LOSKU                            -30.49246  152.35920 WPT  YB  NSW
+LHD      70 LOW HEAD                         -41.06667  146.80000 VFC  YM  TAS
+LRP      70 LOW ROCKY PT                     -43.00000  145.50000 LDM  YM  TAS
+YLOX     50 LOXTON                           -34.47580  140.66385 AD   YM  SA
+YLUC     84 LUCY CREEK                       -22.47667  136.27333 ALA  YM  NT
+YMSY     70 MAATSUYKER                       -43.65487  146.27467 HLS  YM  TAS
+YBMK     44 MACKAY                           -21.17153  149.17961 AD   YB  QLD
+YMAD     62 MADURA                           -31.88333  127.02500 ALA  YM  WA
+YMND     20 MAITLAND (NSW)                   -32.70413  151.48883 AD   YB  NSW
+YMCO     30 MALLACOOTA                       -37.59875  149.72075 AD   YM  VIC
+YMYH     80 MALLAPUNYAH SPRINGS STN          -16.96667  135.77667 ALA  YB  NT
+MDU      60 MANDURAH                         -32.53000  115.72167 LDM  YM  WA
+YMNF     65 MANFRED                          -26.45000  116.55000 ALA  YM  WA
+YMNG     30 MANGALORE                        -36.88829  145.18419 AD   YM  VIC
+YMGD     80 MANINGRIDA                       -12.05605  134.23408 AD   YB  NT
+YMJM     63 MANJIMUP                         -34.26515  116.14041 AD   YM  WA
+MANNA    22 MANNA                            -32.45500  143.94333 WPT  YM  NSW
+YMFD     30 MANSFIELD                        -37.06667  146.11667 ALA  YM  VIC
+YMBL     68 MARBLE BAR                       -21.16284  119.83390 ALA  YM  WA
+YMDZ     68 MARDI STN                        -21.20000  115.98333 ALA  YM  WA
+YMBA     45 MAREEBA                          -17.06911  145.41905 AD   YB  QLD
+YMGR     69 MARGARET RIVER STN               -18.62134  126.88387 ALA  YB  WA
+MRL      70 MARIA ISLAND                     -42.63333  148.08333 LDM  YM  TAS
+MARIE    22 MARIE                            -29.25049  143.42279 WPT  YM  NSW
+YALA     52 MARLA                            -27.33417  133.62639 ALA  YM  SA
+YMQA     84 MARQUA                           -22.85000  137.33333 ALA  YB  NT
+MARR     70 MARRAWAH                         -40.91060  144.70750 LDM  YM  TAS
+YMRE     51 MARREE                           -29.66265  138.06581 ALA  YM  SA
+YMYB     40 MARYBOROUGH (QLD)                -25.51334  152.71511 AD   YB  QLD
+YMBU     30 MARYBOROUGH (VIC)                -37.03296  143.70879 AD   YM  VIC
+YMKA     80 MATARANKA HS RESORT              -14.93000  133.13333 ALA  YB  NT
+MAYD     70 MAYDENA                          -42.76360  146.59720 LDM  YM  TAS
+YMHU     80 MCARTHUR RIVER MINE              -16.44328  136.07666 AD   YB  NT
+YMEK     66 MEEKATHARRA                      -26.61175  118.54768 AD   YM  WA
+YMML     30 MELBOURNE                        -37.67335  144.84340 AD   YM  VIC
+YMED     22 MENINDEE                         -32.36667  142.40500 ALA  YM  NSW
+YMZI     61 MENZIES                          -29.66667  121.02500 ALA  YM  WA
+YMER     21 MERIMBULA                        -36.90871  149.90132 AD   YM  NSW
+YMDN     60 MERREDIN                         -31.52333  118.32056 ALA  YM  WA
+YXMW     20 MERRIWA HOSPITAL                 -32.14333  150.36000 HLS  YB  NSW
+YMMU     44 MIDDLEMOUNT                      -22.80250  148.70472 AD   YB  QLD
+MIDEL    43 MIDEL                            -22.40000  141.42667 WPT  YB  QLD
+YMIA     30 MILDURA                          -34.22926  142.08556 AD   YM  VIC
+YMLS     40 MILES                            -26.80603  150.16978 AD   YB  QLD
+YMGB     80 MILINGIMBI                       -12.09447  134.89353 AD   YB  NT
+YMCT     50 MILLICENT                        -37.58354  140.36611 ALA  YM  SA
+MSTM     68 MILLSTREAM STN                   -21.61667  117.06667 LDM  YM  WA
+YMEW     60 MINGENEW                         -29.20000  115.43333 ALA  YM  WA
+MIJ      80 MINJILANG                        -11.14826  132.58048 LDM  YB  NT
+YMIN     50 MINLATON                         -34.71167  137.52500 ALA  YM  SA
+YMPA     53 MINNIPA                          -32.84292  135.14447 ALA  YM  SA
+YMIR     45 MIRANDA DOWNS                    -17.33333  141.91667 ALA  YB  QLD
+YMIM     40 MIRIAM VALE                      -24.31528  151.51472 ALA  YB  QLD
+YMIT     41 MITCHELL                         -26.48343  147.93677 ALA  YB  QLD
+YMIP     69 MITCHELL PLATEAU                 -14.79021  125.82583 ALA  YB  WA
+YMTA     84 MITTIEBAH                        -18.80633  137.07517 ALA  YB  NT
+YMNK     41 MONKIRA                          -24.81853  140.55320 ALA  YB  QLD
+YMTJ     80 MONTEJINNI                       -16.70472  131.73417 ALA  YB  NT
+YMTO     40 MONTO                            -24.88595  151.10030 ALA  YB  QLD
+YOOM     52 MOOMBA                           -28.09954  140.19705 AD   YM  SA
+MIE      40 MOONIE                           -27.71667  150.36667 LDM  YB  QLD
+YMMB     30 MOORABBIN                        -37.97585  145.10231 AD   YM  VIC
+YMRB     44 MORANBAH                         -22.05791  148.07756 AD   YB  QLD
+YMRW     60 MORAWA                           -29.20125  116.02199 AD   YM  WA
+YMOR     20 MOREE                            -29.49881  149.84465 AD   YB  NSW
+YMNY     41 MORNEY                           -25.35833  141.43333 ALA  YB  QLD
+YMTI     45 MORNINGTON ISLAND                -16.66263  139.17793 AD   YB  QLD
+YMRY     21 MORUYA                           -35.89784  150.14441 AD   YM  NSW
+MSV      21 MOSS VALE                        -34.52530  150.42170 LDM  YM  NSW
+YMAU     66 MOUNT AUGUSTUS                   -24.31667  116.91667 ALA  YM  WA
+YMBB     30 MOUNT BAW BAW                    -37.84167  146.26167 HLS  YM  VIC
+YMBT     30 MOUNT BEAUTY                     -36.73333  147.16667 ALA  YM  VIC
+MTB      20 MOUNT BOYCE                      -33.61850  150.27410 LDM  YM  NSW
+MCHR     53 MOUNT CHRISTIE                   -30.55000  133.21667 LDM  YM  SA
+YMCL     44 MOUNT COOLON                     -21.38700  147.33228 ALA  YB  QLD
+MDY      63 MOUNT DAY                        -32.13333  120.50000 LDM  YM  WA
+YMNN     84 MOUNT DENISON                    -22.14083  132.06917 ALA  YM  NT
+YMEB     51 MOUNT EBA                        -30.17869  135.67350 ALA  YM  SA
+MEV      64 MOUNT EVERARD                    -25.18333  125.06667 LDM  YM  WA
+YMTG     50 MOUNT GAMBIER                    -37.74544  140.78528 AD   YM  SA
+YMRT     45 MOUNT GARNET                     -17.70000  145.15000 ALA  YB  QLD
+YGON     43 MOUNT GORDON                     -19.77500  139.40667 AD   YB  QLD
+YMHO     69 MOUNT HOUSE                      -17.05100  125.71347 ALA  YB  WA
+YMHW     41 MOUNT HOWITT                     -26.51106  142.28327 ALA  YB  QLD
+YBMA     43 MOUNT ISA                        -20.66391  139.48873 AD   YB  QLD
+YMIV     53 MOUNT IVE                        -32.44433  136.06967 ALA  YM  SA
+MJK      61 MOUNT JACKSON HS                 -30.20000  119.10000 LDM  YM  WA
+YMLF     50 MOUNT LOFTY                      -34.97667  138.70833 HLS  YM  SA
+MLUY     84 MOUNT LUCY                       -22.60000  133.53333 LDM  YM  NT
+MCD      30 MOUNT MACEDON                    -37.37500  144.57639 VFC  YM  VIC
+YMOG     60 MOUNT MAGNET                     -28.11616  117.84173 AD   YM  WA
+YMDK     85 MOUNT RIDDOCK STN                -23.03333  134.68333 ALA  YM  NT
+YMSF     84 MOUNT SANFORD STN                -16.97833  130.55500 ALA  YB  NT
+MUSD     68 MOUNT SYDNEY                     -21.40000  121.20000 LDM  YM  WA
+YMVY     80 MOUNT VALLEY                     -14.08333  133.81667 ALA  YB  NT
+MVO      66 MOUNT VERNON HS                  -24.23333  118.23333 LDM  YM  WA
+MVI      20 MOUNT VICTORIA                   -33.58333  150.25000 LDM  YM  NSW
+MTWN     30 MOUNT WELLINGTON                 -37.56000  146.81000 LDM  YM  VIC
+YMDG     20 MUDGEE                           -32.56249  149.61109 AD   YB  NSW
+YLGA     68 MULGA DOWNS                      -22.10722  118.47083 ALA  YM  WA
+YMUK     52 MULKA                            -28.35133  138.65133 ALA  YM  SA
+YMWA     60 MULLEWA                          -28.47522  115.51742 ALA  YM  WA
+YMGI     41 MUNGINDI                         -28.96712  149.05360 ALA  YB  NSW
+YMBD     50 MURRAY BRIDGE                    -35.06667  139.22667 ALA  YM  SA
+MUI      20 MURRURUNDI                       -31.76667  150.83333 LDM  YB  NSW
+YMGV     45 MUSGRAVE                         -14.78333  143.50000 ALA  YB  QLD
+YMTB     43 MUTTABURRA                       -22.58333  144.53333 ALA  YB  QLD
+YNAB     80 NABARLEK                         -12.30833  133.31250 ALA  YB  NT
+NAILA    86 NAILA                            -13.21526  128.12057 WPT  YB  WA
+YNNT     68 NANUTARRA                        -22.53333  115.50000 ALA  YM  WA
+YNAP     41 NAPPA MERRIE                     -27.55833  141.13333 ALA  YB  QLD
+YNPB     84 NAPPERBY                         -22.53306  132.76306 ALA  YM  NT
+YNRC     50 NARACOORTE                       -36.98522  140.72496 AD   YM  SA
+YNRB     60 NAREMBEEN                        -32.11667  118.41667 ALA  YM  WA
+NAMA     21 NAROOMA                          -36.20000  150.13333 LDM  YM  NSW
+YNBR     20 NARRABRI                         -30.31918  149.82734 AD   YB  NSW
+YNAR     22 NARRANDERA                       -34.70217  146.51226 AD   YM  NSW
+YNRG     63 NARROGIN                         -32.93000  117.08000 ALA  YM  WA
+YNDS     44 NATAL DOWNS                      -21.08333  146.15000 ALA  YB  QLD
+YNAT     80 NATHAN RIVER STN                 -15.58704  135.42991 ALA  YB  NT
+NATTY    51 NATTY                            -31.55667  137.14167 WPT  YM  SA
+NKBO     22 NECKARBOO                        -32.06667  144.61667 LDM  YM  NSW
+YNWN     68 NEWMAN                           -23.41783  119.80274 AD   YM  WA
+YNGU     80 NGUKURR                          -14.72283  134.74760 AD   YB  NT
+YNHL     30 NHILL                            -36.30967  141.64091 AD   YM  VIC
+NONAX    83 NONAX                            -23.52139  123.86912 WPT  YM  WA
+YNKA     69 NOONKANBAH                       -18.50000  124.83333 ALA  YB  WA
+NOPAG    80 NOPAG                            -10.86575  135.87475 WPT  YB  NT
+YNTN     45 NORMANTON                        -17.68500  141.07025 AD   YB  QLD
+YNSM     63 NORSEMAN                         -32.20933  121.75457 AD   YM  WA
+NSTA     40 NORTH STAR                       -28.91667  150.41667 LDM  YB  NSW
+YNPE     45 NORTHERN PENINSULA               -10.95082  142.45946 AD   YB  QLD
+YNWD     20 NOWENDOC                         -31.51000  151.74667 ALA  YB  NSW
+YSNW     21 NOWRA                            -34.94899  150.53706 AD   YM  NSW
+YNUL     68 NULLAGINE                        -21.91268  120.19855 ALA  YM  WA
+YNUM     80 NUMBULWAR                        -14.27166  135.71667 AD   YB  NT
+YNUT     80 NUTWOOD DOWNS                    -15.81667  134.15000 ALA  YB  NT
+YNYN     22 NYNGAN                           -31.55115  147.20281 AD   YM  NSW
+YBOK     40 OAKEY                            -27.41148  151.73531 AD   YB  QLD
+OAT      70 OATLANDS                         -42.30000  147.36667 LDM  YM  TAS
+OBSH     52 OBSERVATORY HILL                 -28.96667  132.00000 LDM  YM  SA
+YOEN     80 OENPELLI                         -12.32521  133.00564 AD   YB  NT
+YOLD     51 OLYMPIC DAM                      -30.48500  136.87667 AD   YM  SA
+YOLW     68 ONSLOW                           -21.66840  115.11300 AD   YM  WA
+YOOD     52 OODNADATTA                       -27.55994  135.44495 ALA  YM  SA
+YODA     53 OOLDEA                           -30.45667  131.82333 ALA  YM  SA
+YORG     21 ORANGE                           -33.37802  149.12550 AD   YM  NSW
+YORB     30 ORBOST                           -37.79040  148.60961 AD   YM  VIC
+YORV     69 ORD RIVER                        -17.34111  128.91194 ALA  YB  WA
+ORTOS    41 ORTOS                            -28.07500  141.53833 WPT  YM  QLD
+OSVOL    68 OSVOL                            -20.25101  122.04878 WPT  YB  WA
+YOUY     30 OUYEN                            -35.11667  142.35000 ALA  YM  VIC
+OVL      65 OVERLANDER                       -26.40000  114.46667 LDM  YM  WA
+OVLUK    60 OVLUK                            -30.59405  116.77976 WPT  YM  WA
+YPNW     68 PANNAWONICA                      -21.62833  116.32000 ALA  YM  WA
+YPAY     85 PAPUNYA                          -23.24098  131.90695 ALA  YM  NT
+YPBO     68 PARABURDOO                       -23.17122  117.74540 AD   YM  WA
+YPPF     50 PARAFIELD                        -34.79330  138.63298 AD   YM  SA
+YPKS     21 PARKES                           -33.13127  148.23905 AD   YM  NSW
+YPYF     60 PAYNES FIND                      -29.26222  117.66944 ALA  YM  WA
+PEAKE    21 PEAKE                            -36.01667  149.51000 WPT  YM  NSW
+YPEA     60 PEARCE                           -31.66768  116.01506 AD   YM  WA
+PEAR     53 PEARSON ISLES                    -33.95000  134.26667 LDM  YM  SA
+YPND     43 PENTLAND                         -20.53333  145.36667 ALA  YB  QLD
+PVS      83 PERCIVAL LAKES                   -21.58000  124.16000 LDM  YM  WA
+YPPH     60 PERTH                            -31.94016  115.96687 AD   YM  WA
+YPTB     50 PETERBOROUGH                     -33.00500  138.84833 ALA  YM  SA
+YPID     30 PHILLIP ISLAND HELIPORT          -38.52000  145.32667 HLS  YM  VIC
+PILTA    22 PILTA                            -33.19167  141.79333 WPT  YM  NSW
+PINAV    52 PINAV                            -28.88167  129.00000 WPT  YM  WA
+YMPC     30 POINT COOK                       -37.93226  144.75346 AD   YM  VIC
+YPCE     22 POONCARIE                        -33.37332  142.58332 AD   YM  NSW
+YPMP     45 PORMPURAAW                       -14.89746  141.61093 AD   YB  QLD
+YPAG     50 PORT AUGUSTA                     -32.50692  137.71680 AD   YM  SA
+PDV      70 PORT DAVEY                       -43.33333  145.88333 LDM  YM  TAS
+YPPD     68 PORT HEDLAND                     -20.37784  118.62648 AD   YM  WA
+YPKT     80 PORT KEATS                       -14.24987  129.52922 AD   YB  NT
+YPLC     50 PORT LINCOLN                     -34.60539  135.88028 AD   YM  SA
+YPMQ     20 PORT MACQUARIE                   -31.43594  152.86335 AD   YB  NSW
+PNE      50 PORT NEILL                       -34.11667  136.35000 LDM  YM  SA
+YPIR     50 PORT PIRIE                       -33.23894  137.99491 AD   YM  SA
+YPOD     30 PORTLAND                         -38.31809  141.47104 AD   YM  VIC
+POTIP    83 POTIP                            -21.69363  125.13291 WPT  YB  WA
+PRES     83 PRESCOTT LAKES                   -20.75000  125.16667 LDM  YB  WA
+PCB      45 PRINCESS CHARLOTTE BAY           -14.33333  144.11667 LDM  YB  QLD
+YPMH     52 PROMINENT HILL                   -29.71788  135.52449 AD   YM  SA
+YBPN     44 PROSERPINE / WHITSUNDAY COAST    -20.49500  148.55235 AD   YB  QLD
+PULOL    85 PULOL                            -24.45449  136.76216 WPT  YM  NT
+PUTY     20 PUTTY                            -32.96667  150.75000 LDM  YB  NSW
+YQLP     41 QUILPIE                          -26.60853  144.25730 AD   YB  QLD
+YQDI     20 QUIRINDI                         -31.49869  150.51803 AD   YB  NSW
+YRNG     80 RAMINGINING                      -12.35646  134.89757 AD   YB  NT
+RARIE    66 RARIE                            -25.86833  117.55500 WPT  YM  WA
+YNRV     63 RAVENSTHORPE                     -33.79719  120.20808 AD   YM  WA
+YRAW     62 RAWLINNA                         -31.01667  125.32500 ALA  YM  WA
+YREN     50 RENMARK                          -34.19641  140.67400 AD   YM  SA
+RENR     84 RENNER SPRINGS                   -18.31667  133.80000 LDM  YB  NT
+YSRI     20 RICHMOND (NSW)                   -33.60069  150.78072 AD   YM  NSW
+YRMD     43 RICHMOND (QLD)                   -20.70203  143.11481 AD   YB  QLD
+YRNW     85 RINGWOOD STN                     -23.82889  134.96167 ALA  YM  NT
+YRBR     80 ROBINSON RIVER                   -16.71833  136.94500 ALA  YB  NT
+YROI     30 ROBINVALE                        -34.65069  142.78274 AD   YM  VIC
+YBRK     40 ROCKHAMPTON                      -23.38193  150.47526 AD   YB  QLD
+YROE     68 ROEBOURNE                        -20.76148  117.15613 ALA  YM  WA
+YRLL     40 ROLLESTON                        -24.46093  148.62758 ALA  YB  QLD
+RGS      44 ROLLINGSTONE                     -19.04722  146.38750 VFA  YB  QLD
+YROM     41 ROMA                             -26.54512  148.77486 AD   YB  QLD
+ROOKI    80 ROOKI                            -10.94714  139.20453 WPT  YB  QLD
+YRSB     41 ROSEBERTH                        -25.83333  139.65000 ALA  YB  QLD
+YRTI     60 ROTTNEST ISLAND                  -32.00677  115.53975 AD   YM  WA
+YRTP     45 RUTLAND PLAINS                   -15.64327  141.84320 ALA  YB  QLD
+SAFIR    68 SAFIR                            -19.36667  120.57500 WPT  YM  WA
+YSCK     50 SALT CREEK                       -36.13762  139.64424 ALA  YM  SA
+YSMH     44 SAMUEL HILL                      -22.75000  150.63333 ALA  YB  QLD
+YSAN     61 SANDSTONE                        -27.97500  119.29167 ALA  YM  WA
+YSYC     40 SANDY CAPE                       -24.73333  153.20000 ALA  YB  QLD
+YSAC     70 SANDY CAPE                       -41.42000  144.74500 HLS  YM  TAS
+SVR      70 SAVAGE RIVER                     -41.58333  145.13333 LDM  YM  TAS
+SCATZ    20 SCATZ                            -32.65500  150.25500 WPT  YB  NSW
+YSCO     20 SCONE                            -32.03725  150.83213 AD   YB  NSW
+SCOTI    84 SCOTI                            -21.32369  133.45808 WPT  YB  NT
+STC      80 SCOTT CREEK                      -14.83333  131.83333 LDM  YB  NT
+STTE     70 SCOTTSDALE                       -41.16667  147.51667 LDM  YM  TAS
+YSFH     80 SHADFORTH HILLS                  -13.16667  134.10000 ALA  YB  NT
+YSHK     65 SHARK BAY                        -25.89387  113.57723 AD   YM  WA
+YSHG     68 SHAY GAP                         -20.42444  120.14000 ALA  YM  WA
+SHL      45 SHELBURNE BAY                    -11.88333  143.01667 LDM  YB  QLD
+SHEPP    80 SHEPP                            -10.59944  129.15556 WPT  YB  NT
+YSHT     30 SHEPPARTON                       -36.42881  145.39256 AD   YM  VIC
+YSMP     80 SMITH PT                         -11.15000  132.15000 ALA  YB  NT
+YSMI     70 SMITHTON                         -40.83502  145.08374 ALA  YM  TAS
+YSNB     80 SNAKE BAY                        -11.42288  130.65352 AD   YB  NT
+YSNT     50 SNOWTOWN                         -33.81667  138.35000 ALA  YM  SA
+SOFAL    20 SOFAL                            -33.00167  149.77333 WPT  YM  NSW
+SEC      70 SOUTH EAST CAPE                  -43.65000  146.81667 LDM  YM  TAS
+YGBI     80 SOUTH GOULBURN ISLAND            -11.65061  133.38206 AD   YB  NT
+YSCR     61 SOUTHERN CROSS                   -31.24030  119.35979 AD   YM  WA
+YSPK     44 SPRING CREEK                     -18.62167  144.56833 ALA  YB  QLD
+YSTA     30 ST ARNAUD                        -36.63662  143.18584 AD   YM  VIC
+YSGE     41 ST GEORGE                        -28.04976  148.59530 AD   YB  QLD
+YSTH     70 ST HELENS                        -41.33680  148.28185 AD   YM  TAS
+YSLW     44 ST LAWRENCE                      -22.36667  149.46667 ALA  YB  QLD
+YSPE     20 STANTHORPE                       -28.62027  151.99057 AD   YB  QLD
+YSWL     30 STAWELL                          -37.07169  142.74030 AD   YM  VIC
+YSTO     41 STONEHENGE                       -24.35632  143.29130 ALA  YB  QLD
+YSRN     70 STRAHAN                          -42.15563  145.29129 AD   YM  TAS
+STRA     70 STRATHGORDON                     -42.76667  146.03667 LDM  YM  TAS
+YKBY     53 STREAKY BAY                      -32.83582  134.29270 AD   YM  SA
+SUG      20 SUGARLOAF PT                     -32.44444  152.54028 TSP  YB  NSW
+YBSU     40 SUNSHINE COAST                   -26.60342  153.09104 AD   YB  QLD
+YSUJ     84 SUPPLEJACK DOWNS                 -19.26667  129.95000 ALA  YB  NT
+YSRT     41 SURAT                            -27.15956  149.07598 ALA  YB  QLD
+YSWH     30 SWAN HILL                        -35.37571  143.53274 AD   YM  VIC
+YSWA     70 SWANSEA                          -42.10167  148.06833 ALA  YM  TAS
+YSSY     20 SYDNEY                           -33.94600  151.17711 AD   YM  NSW
+TBL      20 TABULAM                          -28.88671  152.56859 LDM  YB  NSW
+TRWL     52 TALLARINGA WELL                  -29.03333  133.28333 LDM  YM  SA
+YSTW     20 TAMWORTH                         -31.08378  150.84669 AD   YB  NSW
+YTAN     84 TANAMI DOWNS                     -20.58333  129.75000 ALA  YB  NT
+YTNR     80 TANUMBIRINI STN                  -16.45000  134.65000 ALA  YB  NT
+YTAA     40 TARA                             -27.15680  150.47668 ALA  YB  QLD
+TAGO     21 TARAGO                           -35.06973  149.65478 LDM  YM  NSW
+YTAR     53 TARCOOLA                         -30.70667  134.57667 ALA  YM  SA
+YTRE     20 TAREE                            -31.88856  152.51384 AD   YB  NSW
+YTAM     40 TAROOM                           -25.80203  149.89944 AD   YB  QLD
+YTSI     70 TASMAN ISLAND                    -43.23968  148.00238 HLS  YM  TAS
+YTEF     68 TELFER                           -21.71495  122.22838 AD   YM  WA
+TEMIS    30 TEMIS                            -37.20633  145.83506 WPT  YM  VIC
+YTEM     22 TEMORA                           -34.42131  147.51169 AD   YM  NSW
+YTNK     84 TENNANT CREEK                    -19.63451  134.18328 AD   YB  NT
+YTFD     20 TENTERFIELD                      -28.99333  151.93000 ALA  YB  NSW
+YXTX     20 TEXAS HOSPITAL                   -28.85550  151.17947 HLS  YB  QLD
+YTNG     40 THANGOOL                         -24.49377  150.57624 AD   YB  QLD
+YTGM     41 THARGOMINDAH                     -27.98635  143.81090 AD   YB  QLD
+YTGT     84 THE GRANITES                     -20.54833  130.35000 AD   YB  NT
+TGU      50 THE GUMS HS                      -33.85000  139.35000 LDM  YM  SA
+YTMO     43 THE MONUMENT                     -21.81108  139.92361 AD   YB  QLD
+YTDR     40 THEODORE                         -24.99341  150.09308 ALA  YB  QLD
+YTHR     66 THREE RIVERS HS                  -25.13333  119.11667 ALA  YM  WA
+YTHY     41 THYLUNGRA                        -26.09328  143.45250 ALA  YB  QLD
+YTIB     22 TIBOOBURRA                       -29.45097  142.05779 AD   YM  NSW
+YTLP     22 TILPA                            -30.92555  144.41998 ALA  YM  NSW
+YTBR     80 TIMBER CREEK                     -15.62050  130.44568 ALA  YB  NT
+YPTN     80 TINDAL                           -14.52099  132.37786 AD   YB  NT
+YTOC     30 TOCUMWAL                         -35.81076  145.60416 AD   YM  NSW
+TMPT     68 TOM PRICE                        -22.69500  117.79167 LDM  YM  WA
+YTWB     40 TOOWOOMBA                        -27.54147  151.91242 AD   YB  QLD
+YTOT     22 TOTTENHAM                        -32.25617  147.36883 ALA  YM  NSW
+YBTL     44 TOWNSVILLE                       -19.25260  146.76529 AD   YB  QLD
+TOWA     65 TOWRANA HS                       -25.43333  115.23333 LDM  YM  WA
+TREBL    52 TREBL                            -26.85833  136.53833 WPT  YM  SA
+YTEE     43 TREPELL                          -21.83491  140.88794 AD   YB  QLD
+TREST    22 TREST                            -34.88333  144.42167 WPT  YM  NSW
+YTRA     64 TROPICANA                        -29.18659  124.55037 AD   YM  WA
+YTTI     86 TROUGHTON ISLAND                 -13.75167  126.14833 AD   YB  WA
+YTMU     21 TUMUT                            -35.26290  148.24072 AD   YM  NSW
+TUNGO    98 TUNGO                            -41.52000  141.00000 WPT  YM  TAS
+YUCH     80 UCHARONIDGE STN                  -17.67361  134.23806 ALA  YB  NT
+UDA      21 ULLADULLA                        -35.35000  150.48333 VFM  YM  NSW
+UNDW     80 UNDEMOW WATERHOLE                -17.58333  135.25000 LDM  YB  NT
+YUDG     43 URANDANGI                        -21.59448  138.36565 ALA  YB  QLD
+VALDA    41 VALDA                            -25.96167  144.56667 WPT  YB  QLD
+VALDU    30 VALDU                            -37.14109  147.55217 WPT  YM  VIC
+YVLG     44 VALLEY OF LAGOONS                -18.68333  145.10000 ALA  YB  QLD
+YVRS     45 VANROOK STN                      -16.96183  141.95217 ALA  YB  QLD
+VEMON    60 VEMON                            -32.53929  117.07448 WPT  YM  WA
+YVRD     80 VICTORIA RIVER DOWNS             -16.40362  131.00250 ALA  YB  NT
+VOKH     52 VOKES HILL                       -28.48333  130.58333 LDM  YM  SA
+YSWG     21 WAGGA WAGGA                      -35.16525  147.46643 AD   YM  NSW
+WGL      64 WAIGEN LAKES                     -27.61667  128.78333 LDM  YM  WA
+YWKI     50 WAIKERIE                         -34.18416  140.03067 AD   YM  SA
+YWCH     20 WALCHA                           -31.00708  151.55535 ALA  YB  NSW
+YWLG     22 WALGETT                          -30.03267  148.12578 AD   YB  NSW
+YWAL     68 WALLAL DOWNS                     -19.77500  120.65833 ALA  YM  WA
+YWRO     50 WALLAROO                         -33.92700  137.63767 HLS  YM  SA
+WPE      63 WALPOLE                          -34.98333  116.73333 LDM  YM  WA
+YWAG     22 WANAARING                        -29.71177  144.17103 ALA  YM  NSW
+YWDV     44 WANDO VALE                       -19.66667  144.90000 ALA  YB  QLD
+YWGT     30 WANGARATTA                       -36.41593  146.30686 AD   YM  VIC
+YWBR     64 WARBURTON                        -26.12833  126.58333 AD   YM  WA
+YWBI     84 WARRABRI                         -20.99928  134.39644 ALA  YB  NT
+YWKB     30 WARRACKNABEAL                    -36.32122  142.41933 AD   YM  VIC
+YWRN     22 WARREN                           -31.73320  147.80253 AD   YM  NSW
+YWBL     30 WARRNAMBOOL                      -38.29514  142.44674 AD   YM  VIC
+YWCK     40 WARWICK                          -28.14944  151.94306 AD   YB  QLD
+YWAV     84 WAVE HILL                        -17.39364  131.11910 ALA  YB  NT
+YWWA     22 WEE WAA                          -30.25833  149.40833 ALA  YB  NSW
+YBWP     45 WEIPA                            -12.67857  141.92538 AD   YB  QLD
+WELS     30 WELSHPOOL                        -38.66500  146.43833 TSP  YM  VIC
+WEBS     30 WEST BASS                        -39.50000  141.00000 LDM  YM  VIC
+YWSL     30 WEST SALE                        -38.09166  146.96525 AD   YM  VIC
+YWWL     22 WEST WYALONG                     -33.93723  147.19152 AD   YM  NSW
+WHM      68 WHIM CREEK                       -20.83333  117.83333 LDM  YM  WA
+YWHC     22 WHITE CLIFFS                     -30.85168  143.07187 ALA  YM  NSW
+WTS      30 WHITTLESEA                       -37.51667  145.11667 LDM  YM  VIC
+YWHA     50 WHYALLA                          -33.05901  137.51448 AD   YM  SA
+YWCA     22 WILCANNIA                        -31.52627  143.37480 ALA  YM  NSW
+YWMC     52 WILLIAM CREEK                    -28.90707  136.34098 ALA  YM  SA
+YWLM     20 WILLIAMTOWN                      -32.79493  151.83447 AD   YB  NSW
+YWLA     84 WILLOWRA                         -21.27667  132.62333 ALA  YM  NT
+WILLS    85 WILLS                            -25.39667  137.98333 WPT  YM  NT
+WILLY    22 WILLY                            -32.78333  145.89500 WPT  YM  NSW
+YWLP     30 WILSONS PROMONTORY               -39.13111  146.42500 HLS  YM  VIC
+YWLU     66 WILUNA                           -26.62925  120.22054 AD   YM  WA
+YWDA     61 WINDARRA                         -28.47500  122.24167 ALA  YM  WA
+YWDH     41 WINDORAH                         -25.41294  142.66731 AD   YB  QLD
+YWPL     68 WINNING POOL NORTH               -23.10000  114.53333 ALA  YM  WA
+YWTN     43 WINTON                           -22.36348  143.08561 AD   YB  QLD
+YWIR     53 WIRRAMINNA                       -31.20000  136.23333 ALA  YM  SA
+YWOL     21 WOLLONGONG                       -34.56116  150.78859 AD   YM  NSW
+YWND     40 WONDAI                           -26.28426  151.86134 ALA  YB  QLD
+YWDL     45 WONDOOLA                         -18.57500  140.89167 ALA  YB  QLD
+YWOG     30 WONTHAGGI TOWNSHIP               -38.60000  145.58333 HLS  YM  VIC
+YPWR     51 WOOMERA                          -31.14407  136.81694 AD   YM  SA
+YWMP     45 WROTHAM PARK                     -16.65813  144.00088 ALA  YB  QLD
+YWUD     53 WUDINNA                          -33.04324  135.44721 AD   YM  SA
+YWYA     41 WYANDRA                          -27.26667  145.99000 ALA  YB  QLD
+YWYF     30 WYCHEPROOF                       -36.05894  143.24330 AD   YM  VIC
+YWYM     69 WYNDHAM                          -15.51144  128.15315 AD   YB  WA
+YWYY     70 WYNYARD                          -40.99879  145.73122 AD   YM  TAS
+YYAL     60 YALGOO                           -28.35360  116.67900 ALA  YM  WA
+YYKI     45 YORKE ISLAND                      -9.75333  143.40500 AD   YB  QLD
+YYNG     21 YOUNG                            -34.25567  148.24813 AD   YM  NSW
+YYND     84 YUENDUMU                         -22.25412  131.78217 ALA  YM  NT
+YYUN     51 YUNTA                            -32.58333  139.55000 ALA  YM  SA
+YZAN     63 ZANTHUS                          -31.03333  123.56667 ALA  YM  WA
+
+792 rows selected.
+
