@@ -2,6 +2,7 @@
 def get_avlocs():
 
     import pandas as pd
+    import numpy as np
     import os
 
     cur_dir = os.path.dirname(__file__)
@@ -23,7 +24,7 @@ def get_avlocs():
         pca = pd.read_fwf(p, widths=[7,5,33,10,11,5,4,5], skiprows=[0,2])
 
 
-    '''merge the two data sets into one 
+    '''merge the two data sets into one dataframe
     left join ensures we keep all airport minima info 
     and supplment these with extra info from pca database, lat, long etc''' 
     locs  = pd.merge(left=minima, right=pca, left_on='Ident', right_on='LOC_ID', how='left')\
@@ -33,10 +34,23 @@ def get_avlocs():
             'SAM (cld (ft))','SAM (vis (m))', ' MSA (ft)']]\
             .set_index('LOC_ID')
 
+    cols_flt = ['AREA','Lat', 'Long','HAM (cld (ft))', 'HAM (vis (m))', \
+            'SAM (cld (ft))','SAM (vis (m))', ' MSA (ft)'] 
+
     # ensure numeric data is forced to be numeric
     for col in  [ 'AREA', 'Lat', 'Long','HAM (cld (ft))', 'HAM (vis (m))', \
             'SAM (cld (ft))','SAM (vis (m))', ' MSA (ft)']:
-        locs[col] = pd.to_numeric(locs[col], errors='coerce')
+        locs[col] = pd.to_numeric(locs[col], downcast='integer',errors='coerce')
+
+    ''' 'AREA' shud be an int not float
+    locs['AREA'] = locs['AREA'].astype(int)
+    Raises ValueError: ('cannot convert float NaN to integer'
+    blw sometimes work - not lways
+    '''
+    locs['AREA'] = locs['AREA'].apply(lambda x: int(x) if x == x else np.NaN)
+   
+    decimals = pd.Series([0,4,4,0,0,0,0,0],index=cols_flt)
+    locs[cols_flt] = locs[cols_flt].round(decimals)
 
     # convert text data to string
     cols_str = ['Location', 'Type', 'Reg', 'State']

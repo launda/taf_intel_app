@@ -1,10 +1,20 @@
+<!--  an HTML table that lists all the airport details. 
+Flask’s templating language allows us to loop through the data list
+and print out a row for each record.
+
+use the Leaflet JavaScript library to create a map on each detail page showing 
+airport location -->
+
 <!doctype html>
 <html lang="en">
-    <head></head>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+        <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    </head>
     <body>
         <h1>Airports in Australia</h1>
         <table border=1 cellpadding=7>
-            <tr>
+            <tr> <!-- do row for table column headers -->
                 <th>Airport_ID</th>
                 <th>Area</th>
                 <th>Lat</th>
@@ -12,8 +22,8 @@
                 <th>Type</th>
                 <th>Reg</th>
                 <th>State</th>
-                <th>Location</th>
             </tr>
+            <!-- loop thru each record and stuff into table row -->
             {% for obj in object_list %}
             <tr> 
             	<!-- add a hyperlink to each detail page to the table -->
@@ -27,6 +37,16 @@
             </tr>
             {% endfor %}
         </table>
+
+        <script type="text/javascript">
+            var map = L.map('map').setView([-35, -130], 9);
+            var osmLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', 
+            {
+                maxZoom: 18,
+                attribution: 'Data, imagery and map information provided by <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>.'
+            });
+            map.addLayer(osmLayer);
+        </script>
 
         <!--<p>{% include 'airports.html' %}</p>-->
     </body>

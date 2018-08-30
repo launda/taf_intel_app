@@ -184,3 +184,115 @@ To https://github.com/launda/taf_intel_app.git
 
 
 
+I did some work directly on remote last night comitted changes then went to sleep
+
+This morning - did lot off work but when came to comit to remote ERRORS
+
+
+[bou@fed27 Desktop]$ cd ~/stats-R/flask_projects/taf_intel_app/repo/
+[bou@fed27 repo]$ ls -ltr
+total 17
+-rw-rw-r--. 1 bou bou   34 Aug 29 21:57 README.md
+drwxrwxr-x. 1 bou bou    0 Aug 29 23:17 templates
+-rw-r--r--. 1 bou bou 6007 Aug 29 23:42 gitting.txt
+drwxrwxr-x. 1 bou bou  248 Aug 30 11:23 static
+-rw-rw-r--. 1 bou bou 2540 Aug 30 11:35 avlocs.py
+drwxrwxr-x. 1 bou bou  176 Aug 30 11:35 __pycache__
+-rw-rw-r--. 1 bou bou 2512 Aug 30 11:54 app.py
+
+
+[bou@fed27 repo]$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   __pycache__/avlocs.cpython-36.pyc
+	modified:   app.py
+	modified:   avlocs.py
+	modified:   templates/airports.html
+	modified:   templates/detail.html
+	modified:   templates/index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+[bou@fed27 repo]$ git add .
+[bou@fed27 repo]$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   __pycache__/avlocs.cpython-36.pyc
+	modified:   app.py
+	modified:   avlocs.py
+	modified:   templates/airports.html
+	modified:   templates/detail.html
+	modified:   templates/index.html
+
+[bou@fed27 repo]$ git commit -m "Added mapping features using Leaflet.js on the detail and index  page" 
+[master b98a758] Added mapping features using Leaflet.js on the detail and index  page
+ 6 files changed, 577 insertions(+), 503 deletions(-)
+ rewrite __pycache__/avlocs.cpython-36.pyc (80%)
+[bou@fed27 repo]$ git push origin master
+Username for 'https://github.com': launda
+Password for 'https://launda@github.com': 
+To https://github.com/launda/taf_intel_app.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/launda/taf_intel_app.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+[bou@fed27 repo]$ git pull
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 7 (delta 5), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (7/7), done.
+From https://github.com/launda/taf_intel_app
+   ce2cda0..d172af3  master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+So now my updated lcoal can't be pushed to remote as
+I did not sync my local with remote last night 
+So out of sync and no easy fix
+
+Copy all update files somewhere safe 
+then do hard git pull to grab remote into local
+
+see
+https://stackoverflow.com/questions/6373277/git-sync-local-repo-with-remote-one/6373538
+
+
+[bou@fed27 repo]$ git fetch origin
+[bou@fed27 repo]$ git reset --hard origin/master
+HEAD is now at d172af3 Update app.py
+[bou@fed27 repo]$ git clean -f -d
+
+
+[bou@fed27 repo]$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   __pycache__/avlocs.cpython-36.pyc
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Thats OK as as soon as git pulled app.py from remote flask saw code change 
+and updated python byte code
+
+
+Now the hard part of updating local copy with saved changes.... aaahhhh
