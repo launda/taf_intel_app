@@ -9,9 +9,6 @@ airport location -->
 <html lang="en">
 
     <head>
-
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
         <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     </head>
@@ -36,7 +33,7 @@ airport location -->
             <!-- loop thru each record and stuff into table row -->
             {% for obj in object_list %}
             <tr> 
-                <!-- add a hyperlink to each detail page to the table -->
+            	<!-- add a hyperlink to each detail page to the table -->
                 <td><a href="{{ obj.LOC_ID}}/">{{ obj.Location}}</a></td>
                 <td>{{ obj.AREA }}</td>
                 <td>{{ obj.Lat }}</td>
@@ -48,8 +45,10 @@ airport location -->
             {% endfor %}
         </table>
         
-        
-        <!-- create a map -two steps: first, initialize the map, and then to draw the basemap. --> 
+        <!-- create a map -two steps: first, initialize the map, and then to draw the basemap.
+
+
+        --> 
         <script type="text/javascript">
             // The first parameter are the coordinates of the center of the map
             // The second parameter is the zoom level
@@ -67,37 +66,39 @@ airport location -->
             map.addLayer(osmLayer);
 
             // see https://leafletjs.com/examples/geojson/
+            // https://www.e-education.psu.edu/geog585/node/769
             // on how to pack a JSON data obj
+            // we could create an empty GeoJSON layer and assign it to a variable so that we can add more to it 
+            var myLayer = L.geoJSON().addTo(map);
+            {% for obj in object_list %}
+                var geojsonFeature = {
+                    "type": "Feature",
+                    "properties": {
+                        "location": "{{ obj.Location }}",
+                        "id": "{{ obj.LOC_ID }}"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [obj.Lat, obj.Long]
+                    }
+                };
 
-            var data = {
-              "type": "FeatureCollection",
-              "features": [
-                {% for obj in object_list %}
-                {
-                  "type": "Feature",
-                  "properties": {
-                    "apt_name": "{{ obj.Location }}",
-                    "apt_id": "{{ obj.LOC_ID }}"
-                  },
-                  "geometry": {
-                    "type": "Point",
-                    "coordinates": [{{ obj.Lat }}, {{ obj.Long }}]
-                  }
-                }{% if not loop.last %},{% endif %}
-                {% endfor %}
-              ]
-            };
-            var dataLayer = L.geoJson(data, {
-                onEachFeature: function(feature, layer) {
+                //myLayer.addData(geojsonFeature);
+                L.geoJSON(geojsonFeature, {
+                    onEachFeature: function(feature, layer) {
                     layer.bindPopup(
-                        '<a href="' + feature.properties.apt_id + '/">' +
-                            feature.properties.apt_name +
+                        '<a href="' + feature.properties.id + '/">' +
+                            feature.properties.location +
                         '</a>'
                     );
-                }
-            });
-            map.addLayer(dataLayer);
-            //map.addTo(dataLayer);  same thing - makes no diff
+                    }
+                }).addTo(map);
+            {% endfor %}
+
+
+            // var dataLayer = L.geoJson(data).addTo(map);
+            // map.addLayer(dataLayer);
+            // map.addTo(dataLayer);  same thing - makes no diff
         </script>
         <!--<p>{% include 'airports.html' %}</p>-->
     </body>

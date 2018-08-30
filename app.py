@@ -10,7 +10,7 @@ cur_dir = os.path.dirname(__file__)
 app = Flask(__name__)
 
 
-def get_csv():
+def get_airport_csv():
     airports = get_avlocs().reset_index()
     # get only those in VIC
     # airports = airports.loc[airports['State'].str.contains('VIC'),]
@@ -42,7 +42,16 @@ an HTML table that lists all airport details
 @app.route("/")
 def index():
     template = 'index.html'  # html page to render
-    airports = get_csv()     # get airport data as a dict obj
+    airports = get_airport_csv()     # get airport data as a dict obj
+    print (airports[:2])     # list of dict entries - each dict is one row from df
+    '''
+    [{'LOC_ID': 'YMAY', 'AREA': 22.0, 'Lat': -36.0676, 'Long': 146.9582, 'Type': 'AD', 'Reg': 'YM',
+     'State': 'NSW', 'Location': 'Albury', 'HAM (cld (ft))': 2231, 'HAM (vis (m))': 7000, 
+     'SAM (cld (ft))': nan, 'SAM (vis (m))': nan, ' MSA (ft)': nan}, 
+     {'LOC_ID': 'YARM', 'AREA': 20.0, 'Lat': -30.5282, 'Long': 151.6171, 'Type': 'AD', 'Reg': 'YB', 
+     'State': 'NSW', 'Location': 'Armidale', 'HAM (cld (ft))': 1384, 'HAM (vis (m))': 6000, 
+     'SAM (cld (ft))': nan, 'SAM (vis (m))': nan, ' MSA (ft)': nan}]
+    '''
     return render_template(template, object_list=airports)
 
 
@@ -59,7 +68,7 @@ rendering with the name object on its own unique page.
 @app.route('/<string:row_id>/')
 def detail(row_id):
     template = 'detail.html'  # the html page to render content to 
-    object_list = get_csv()   # get data as list of records
+    object_list = get_airport_csv()   # get data as list of records
     for row in object_list:   # find record/row for given airport code 
         if row['LOC_ID'] == row_id:
             return render_template(template, object=row)
