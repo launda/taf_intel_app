@@ -1,3 +1,8 @@
+1st make new repo at github.com
+
+https://github.com/launda/taf_intel_app
+
+
 bou@fed27 flask_projects]$ mkdir taf_intel_app
 
 [bou@fed27 flask_projects]$ cd taf_intel_app/
@@ -356,5 +361,49 @@ Excellent - that  went all good - no errors
 check if changes at www
 
 
+https://github.com/launda/taf_intel_app/blob/master/templates/index.html
+
+all good
+
+
+
+https://gis.stackexchange.com/questions/238303/adding-geojson-layer-on-leaflet/2383856
+down vote
+accepted
+I suspect that the JavaScript code that you provide is within the index.js file?
+
+In that case, you just have to re-order your <script> tags to make sure your loc_infra variable is defined and assigned before you try to use it:
+
+<script src="loc_infra.js"></script> <!-- define and assign first -->
+<script src="index.js"></script> <!-- now you can use it -->
+Demo: http://jsfiddle.net/3v7hd2vx/263/
+
+When programming and debugging for the Web, make sure to use the browser console / DevTools (this describes for Chrome, but all browsers have something similar). In your case, it should report the error that loc_infra variable is undefined.
+
+Later on, you can clean your architecture by actually loading a GeoJSON file (i.e. JSON format) instead of a JS file, typically using jQuery's getJSON or through the leaflet-ajax plugin.
+
+https://gis.stackexchange.com/questions/68489/loading-external-geojson-file-into-leaflet-map
+
+
+You can use jquery Ajax to load data and then add it.
+or You can use leaflet-ajax plugin
+https://github.com/calvinmetcalf/leaflet-ajax
+
+26
+down vote
+Look into Leaflet-Ajax. It streamlines everything. Will give up-vote for Neogeomat for mentioning it.
+
+Get the script here https://raw.githubusercontent.com/calvinmetcalf/leaflet-ajax/master/dist/leaflet.ajax.min.js
+ and add it to your header:
+
+<script src="/js/leaflet-0.7.2/leaflet.ajax.min.js"></script>
+Then it's a matter of uploading with the file name.
+
+var geojsonLayer = new L.GeoJSON.AJAX("foo.geojson");       
+geojsonLayer.addTo(map);
+Really straight forward fix and it works. So yay.
+
+Walkthrough: Adding interactive GeoJSON layers in Leafle
+https://www.e-education.psu.edu/geog585/node/769
 
 
