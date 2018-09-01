@@ -16,7 +16,7 @@
             var mymap = L.map('mapid').setView([{{ object.Lat }}, {{ object.Long }}], 16);
 
             var osmLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 10,
+                maxZoom: 12,
                 attribution: 'Data, imagery and map information provided by <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors.'
             });
             mymap.addLayer(osmLayer);
@@ -42,15 +42,15 @@
             */
 
             //Adding a circle for 30NM is the same (except for specifying the radius in meters as a second argument)55560
-            
+            // 5NM = 9260 , 10NM = 18520, 30NM = 55550
             var circle = L.circle([{{ object.Lat }}, {{ object.Long }}], {
                 color: 'red',
                 fillColor: '#f03',
                 fillOpacity: 0.1,
-                radius: 55550
+                radius: 9260
             }).addTo(mymap);
 
-            circle.bindPopup("{{object.Location}} 30NM TMA.");
+            circle.bindPopup("{{object.Location}} 5NM (NB:TMA 30NM).");
           
             // Add polygon for NE Arrival Coorridor for YBBN
             /*
