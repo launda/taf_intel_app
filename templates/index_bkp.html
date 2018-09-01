@@ -14,27 +14,29 @@ see https://leafletjs.com/examples/quick-start/
 
     
     <head>
+    <!--
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
         <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-    </head>
-    <!--
+    -->
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-   crossorigin=""/> -->
+   crossorigin=""/>
         <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <!--
          <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
    integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
-   crossorigin=""></script> -->
+   crossorigin=""></script>
+
+    </head>
 
     <body>
         <!--need to give Leaflet a place to put the map, and MUST give that map a height 
         make a div with the id of map, and give it a height with inline style. -->
 
-        <div id="mapid" style="width:100%; height:600px;"></div>
+        <div id="mapid" style="width:100%; height:500px;"></div>
 
         <h1>Airports in Australia</h1>
-
         <table border=1 cellpadding=7>
             <tr> <!-- do row for table column headers -->
                 <th>Airport_ID</th>
@@ -63,14 +65,14 @@ see https://leafletjs.com/examples/quick-start/
         
         <!-- create a map -two steps: first, initialize the map, and then to draw the basemap. --> 
         <script type="text/javascript">
-        	//// The first parameter are the coordinates of the center of the map
+            // The first parameter are the coordinates of the center of the map
             // The second parameter is the zoom level
             // By default (as we didn’t pass any options when creating the map instance), 
             // all mouse and touch interactions on the map are enabled, and it has zoom and attribution controls.
 
             //Note that setView call also returns the map object — most Leaflet methods act like this when they don’t return //an explicit value, which allows convenient jQuery-like method chaining
 
-            var mymap = L.map('mapid').setView([-20, 135], 20);
+            var mymap = L.map('mapid').setView([-25, 130], 4);
 
             // Next we’ll add a tile layer to add to our map - it’s a Mapbox Streets tile layer
             // Creating a tile layer usually involves setting the URL template for the tile images, 
@@ -82,43 +84,38 @@ see https://leafletjs.com/examples/quick-start/
             // {x} and {y} are the x/y of where you are on the map
             // {z} is the zoom level
             // {s} is the subdomain of cartodb
-
             var osmLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 5,
+                maxZoom: 12,
                 attribution: 'Data, imagery and map information provided by <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors.'
             });
             mymap.addLayer(osmLayer);
 
+
             // see https://leafletjs.com/examples/geojson/
             // GeoJSON is a format for encoding a variety of geographic data structures […]. A GeoJSON object may represent a region of space (a Geometry), a spatially bounded entity (a Feature), or a list of Features (a FeatureCollection). GeoJSON supports the following geometry types: Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon, and GeometryCollection. Features in GeoJSON contain a Geometry object and additional properties, and a FeatureCollection contains a list of Features.
 
+            // can't use json object as it is - we need to add it to FeatureCollection
+            // var data = {{obj_JSON}}  
+            // var data = {{obj_jsonify}}
+            // var data = {{obj_json_dump}}
 
-            {#  Features in GeoJSON contain a Geometry object and additional properties
-            var myAirport_geojson_Feature = {
-    			"type": "Feature",
-   				"properties": {
-        			"location": "{{ obj.Location }}",
-                    "id": "{{ obj.LOC_ID }}"
-    			},
-    			"geometry": {
-        			"type": "Point",
-        			"coordinates": [{{ obj.Long }}, {{ obj.Lat }}]
-    			}
-			};
 
-			The ABV just defines just one Feature, we need a collections of Features
-			as we have 100s of airports, each airport is a row or Feature
-			#}
+            //object_list=airports,
+        	//obj_jsonify = obj_jsonify,
+        	//obj_json_dump = obj_json_dump
 
-            var myAirports_geojson_FeatureColln = {
-              "type": "FeatureCollection", // FeatureCollection contains a list of Features
-              "features": [				   // now define a list [] of Features
-                {% for obj in object_list %} //loop thru all json entries and add to collection
+            var data = {
+              "type": "FeatureCollection",
+              "features": [
+                // for obj in object_list  - doesn't work with dict
+                // for obj in obj_jsonify  - TypeError: 'Response' object is not iterable
+                // for obj in obj_json_dump - doesn't work with dict
+                {% for obj in object_list %} 
                 {
                   "type": "Feature",
                   "properties": {
-                    "location": "{{ obj.Location }}",
-                    "id": "{{ obj.LOC_ID }}"
+                    "apt_name": "{{ obj.Location }}",
+                    "apt_id": "{{ obj.LOC_ID }}"
                   },
                   "geometry": {
                     "type": "Point",
@@ -130,33 +127,24 @@ see https://leafletjs.com/examples/quick-start/
             };
 
             // GeoJSON objects are added to the map through a GeoJSON layer
-            // 1st way: is create geoJSON layer and add to map at same time
             // L.geoJSON(geojsonFeature).addTo(map);
+			// L.geoJSON(data).addTo(mymap)
 
-            // 2nd way: is 1st create a geojson layer L.jeoJSON() using Feature Collection
-            // and later on add to map
-            // var dataLayer = L.geoJson(myAirports_geojson_FeatureColln);
-            // map.addLayer(dataLayer);
+            //{# 
 
-            // 3rd way: create an empty GeoJSON layer,assign it to a variable and add to map
-            // then later on add features to it
-            // var myLayer = L.geoJSON().addTo(map);
-			// myLayer.addData(myAirports_geojson_FeatureColln);
-
-            // we do it 2nd way: 1st create geoJSON layer with 
-            // and inline function to add pop up for eachFeature
-            // wrap the airport location in a hyperlink to airports detail page
-
-            var dataLayer = L.geoJSON(myAirports_geojson_FeatureColln, {
+            var dataLayer = L.geoJSON(data, {
                 onEachFeature: function(feature, layer) {
                     layer.bindPopup(
-                        '<a href="aero_details/' + feature.properties.id + '/">' +
-                            feature.properties.location +
+                        '<a href="' + feature.properties.apt_id + '/">' +
+                            feature.properties.apt_name +
                         '</a>'
                     );
                 }
             });
             mymap.addLayer(dataLayer);
+            //map.addTo(dataLayer);  same thing - makes no diff
+
+            //#}
         </script>
         <!--<p>{% include 'airports.html' %}</p>-->
     </body>
