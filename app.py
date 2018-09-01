@@ -32,8 +32,8 @@ def get_airport_csv():
     '''
     # grab 1st 8 cols and dropna() - other cols MSA and SAM have many nans
     # will drop almost all airport!!
-    print("Airports shape b4 drop na", airports.shape)
-    airports = airports.iloc[:,:8].dropna()
+    # print("Airports shape b4 drop na", airports.shape)
+    # airports = airports.iloc[:,:8].dropna()
     print(airports.head())
     print("isnull().any()", airports.isnull().any())
     airports = airports.to_dict(orient='records')

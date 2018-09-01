@@ -2,7 +2,6 @@
 def get_avlocs():
 
     import pandas as pd
-    import numpy as np
     import os
 
     cur_dir = os.path.dirname(__file__)
@@ -34,31 +33,31 @@ def get_avlocs():
             'SAM (cld (ft))','SAM (vis (m))', ' MSA (ft)']]\
             .set_index('LOC_ID')
 
-    cols_flt = ['HAM (cld (ft))', 'HAM (vis (m))', \
+    cols_flt = ['Lat', 'Long','HAM (cld (ft))', 'HAM (vis (m))', \
             'SAM (cld (ft))','SAM (vis (m))', ' MSA (ft)'] 
 
     # ensure numeric data is forced to be numeric
-    for col in  [ 'HAM (cld (ft))', 'HAM (vis (m))', \
+    for col in  ['Lat', 'Long', 'HAM (cld (ft))', 'HAM (vis (m))', \
             'SAM (cld (ft))','SAM (vis (m))', ' MSA (ft)']:
         locs[col] = pd.to_numeric(locs[col], downcast='integer',errors='coerce')
 
-    ''' 'AREA' shud be an int not float
+    # 'AREA' shud be an int not float, NaN is compatible with float but no int
+    # columns in minima.xls can't be missing - drop rows with NaNs in these cols 
+    # else Raises ValueError: ('cannot convert float NaN to integer') 
+    locs.dropna(subset=['State','Location','HAM (cld (ft))', 'HAM (vis (m))'],inplace=True)
+
     locs['AREA'] = locs['AREA'].astype(int)
-    Raises ValueError: ('cannot convert float NaN to integer'
-    blw sometimes work - not lways
-    '''
     # locs['AREA'] = locs['AREA'].apply(lambda x: int(x) if x == x else np.NaN)
    
-    # decimals = pd.Series([0,4,4,0,0,0,0,0],index=cols_flt)
-    # locs[cols_flt] = locs[cols_flt].round(decimals)
+    decimals = pd.Series([4,4],index=['Lat', 'Long'])  # lat/long to 4 dec plc
+    locs = locs.round(decimals)
 
-    # convert text data to string
-    cols_str = ['Location', 'AREA','Lat', 'Long','Type', 'Reg', 'State']
+    # force convert text data to string
+    cols_str = ['Location', 'Type', 'Reg', 'State']
     locs[cols_str] = locs[cols_str].astype(str)
 
-    # note x is longitude , y is latitude , and we give data as x,y so Long, Lat
-    # 'Lat':'x', 'Long':'y'
-    
+    # (x,y) coord system x is longitude , y is latitude 
+    # shorten longer names
     locs.rename(columns= {
          'HAM (cld (ft))':'HAM_cld_ft', 'HAM (vis (m))':'HAM_vis_m', \
          'SAM (cld (ft))':'SAM_cld_ft','SAM (vis (m))':'SAM_vis_m', ' MSA (ft)':'MSA'}, inplace=True)
