@@ -13,6 +13,7 @@ app = Flask(__name__)
 
 def get_airport_csv():
     airports = get_avlocs().reset_index()
+
     # get only those in VIC
     # airports = airports.loc[airports['State'].str.contains('VIC'),]
     # convert DF .to_dict() as we can't pass pandas DF to jinja2 templates
@@ -93,9 +94,12 @@ def detail(row_id):
     object_list = get_airport_csv()   # get data as list of records
     for row in object_list:   # find record/row for given airport code 
         if row['LOC_ID'] == row_id.upper():
-            return render_template(template, object=row)
+            return render_template(template, airport=row)
     abort(404)  # Display MSG if no page found
     #Not Found : The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+
+
+
 
 if __name__ == '__main__':
     # Fire up the Flask test server

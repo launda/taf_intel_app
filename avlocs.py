@@ -1,9 +1,7 @@
-
 def get_avlocs():
-
+    
     import pandas as pd
     import os
-
     cur_dir = os.path.dirname(__file__)
     
     '''get TAF codes for airports in diff states from minima file at web.bom.gov.au
@@ -46,14 +44,15 @@ def get_avlocs():
     # else Raises ValueError: ('cannot convert float NaN to integer') 
     locs.dropna(subset=['State','Location','HAM (cld (ft))', 'HAM (vis (m))'],inplace=True)
 
-    locs['AREA'] = locs['AREA'].astype(int)
+    # leave area as str as http://127.0.0.1:5000/api/v1/resources/tafors?area=40 fails!!
+    # locs['AREA'] = locs['AREA'].astype(int)
     # locs['AREA'] = locs['AREA'].apply(lambda x: int(x) if x == x else np.NaN)
    
     decimals = pd.Series([4,4],index=['Lat', 'Long'])  # lat/long to 4 dec plc
     locs = locs.round(decimals)
 
     # force convert text data to string
-    cols_str = ['Location', 'Type', 'Reg', 'State']
+    cols_str = ['AREA','Location', 'Type', 'Reg', 'State']
     locs[cols_str] = locs[cols_str].astype(str)
 
     # (x,y) coord system x is longitude , y is latitude 

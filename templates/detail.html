@@ -2,20 +2,27 @@
 	airport location -->
 <!doctype html>
 <html lang="en">
+
     <head>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
         <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     </head>
+
     <body>
+
         <div id="mapid" style="width:100%; height:500px;"></div>
 
-        <h1>{{ object.Location }} airport is located in {{object.State}} state
-        ARFOR {{ object.AREA }}.<br>HAM ceiling:{{object.HAM_cld_ft}}ft,
-        HAM visibility:{{object.HAM_vis_m}}m<br>
-        SAM ceiling {{ object.SAM_cld_ft}} ft, SAM vis {{ object.SAM_vis_m}} m,MSA={{ object.MSA}} ft </h1>
+        <h1>{{ airport.Location }} airport ({{airport.LOC_ID}})| State {{airport.State}} |
+        Area {{ airport.AREA }} </h1>
+        
+        
+        <h5>HAM ceiling:{{ airport.HAM_cld_ft}}ft | HAM vis: {{airport.HAM_vis_m }}m
+        SAM ceiling {{ airport.SAM_cld_ft}} ft | SAM vis {{ airport.SAM_vis_m}} m | 
+        MSA={{ airport.MSA}} ft | Elevation:{{airport.elevation}}ft  
+        </h5>
         
         <script type="text/javascript">
-            var mymap = L.map('mapid').setView([{{ object.Lat }}, {{ object.Long }}], 16);
+            var mymap = L.map('mapid').setView([{{ airport.Lat }}, {{ airport.Long }}], 16);
 
             var osmLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 12,
@@ -23,21 +30,21 @@
             });
             mymap.addLayer(osmLayer);
             //add other things to your map,markers, polylines, polygons, circles, and popups ext.Here we add a marker
-            var marker = L.marker([{{ object.Lat }}, {{ object.Long }}]).addTo(mymap);
+            var marker = L.marker([{{ airport.Lat }}, {{ airport.Long }}]).addTo(mymap);
 
             // Popups are usually used when you want to attach some information to a particular object on a map
             // bindPopup method attaches a popup with the specified HTML content to your marker 
             // so the popup appears when you click on the object, and the openPopup method (for markers only) 
             // immediately opens the attached popup.
 
-            marker.bindPopup("{{object.Location}} airport").openPopup();
+            marker.bindPopup("{{airport.Location}} airport").openPopup();
 
             // also use popups as layers (when you need something more than attaching a popup to an object)
             // uses openOn() instead of addTo() because it handles automatic closing of a previously 
             // opened popup when opening a new one which is good for usability
             /*
             var popup = L.popup()
-                .setLatLng([{{ object.Lat }}+1.5, {{ object.Long }}-2])
+                .setLatLng([{{ airport.Lat }}+1.5, {{ airport.Long }}-2])
                 .setContent("I live here.")
                 .openOn(mymap);
 
@@ -45,24 +52,24 @@
 
             //Adding a circle for 30NM is the same (except for specifying the radius in meters as a second argument)55560
             // 5NM = 9260 , 10NM = 18520, 30NM = 55550
-            var circle = L.circle([{{ object.Lat }}, {{ object.Long }}], {
+            var circle = L.circle([{{ airport.Lat }}, {{ airport.Long }}], {
                 color: 'red',
                 fillColor: '#f03',
                 fillOpacity: 0.1,
                 radius: 9260
             }).addTo(mymap);
 
-            circle.bindPopup("{{object.Location}} 5NM (NB:TMA 30NM).");
+            circle.bindPopup("{{airport.Location}} 5NM (NB:TMA 30NM).");
           
             // Add polygon for NE Arrival Coorridor for YBBN
             /*
             var polygon = L.polygon([
-                [{{ object.Lat }}+1, {{ object.Long }}+1],
-                [{{ object.Lat }}+1.5, {{ object.Long }}-2],
-                [{{ object.Lat }}-1, {{ object.Long }}+1]
+                [{{ airport.Lat }}+1, {{ airport.Long }}+1],
+                [{{ airport.Lat }}+1.5, {{ airport.Long }}-2],
+                [{{ airport.Lat }}-1, {{ airport.Long }}+1]
             ]).addTo(mymap);
 
-            polygon.bindPopup("{{object.Location}} NE High Traffic Area.");  
+            polygon.bindPopup("{{airport.Location}} NE High Traffic Area.");  
             */
 
             // Dealing with events
@@ -74,7 +81,7 @@
                 //alert("Cordinates " + e.latlng);  // alert() too old fashined - use pop ups
                 coord_popup
                     .setLatLng(e.latlng)
-                    .setContent("Coordinates " + e.latlng.toString())
+                    .setContent("" + e.latlng.toString())
                     .openOn(mymap);
             }
             mymap.on('click', onMapClick);

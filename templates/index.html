@@ -7,13 +7,26 @@ airport location
 
 see https://leafletjs.com/examples/quick-start/
 
--->
+To use leaflet, we need to add two lines to our layout.html. 
+The first is the CSS, and the second is the JavaScript.
 
-<!doctype html>
+Leaflet is 2D only.
+If you want 3D, Use openlayers 3. It supports 3d globe views
+If you want 3D, use a 3D map engine, such as CesiumJS.
+
+https://www.sitepoint.com/3d-maps-with-eegeo-and-leaflet/
+A free eeGeo API key is required
+https://accounts.wrld3d.com/#account
+API Key uses vinorda@gmail.com and usual pwd
+
+Change the <script> include we added to <head> to include eegeo.js rather than Leaflet. The eegeo.js file already contains Leaflet, so don’t include both:
+<script src="https://cdn-webgl.eegeo.com/eegeojs/api/v0.1.780/eegeo.js"></script>
+-->
 <html lang="en">
 
     
     <head>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
         <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     </head>
@@ -28,14 +41,27 @@ see https://leafletjs.com/examples/quick-start/
    crossorigin=""></script> -->
 
     <body>
+
+        <header>
+             <h1 class="title alpha">
+                    <center><a href="/">Aerodrome Weather Intelligence</a></center>
+                </h1>
+            <h3>For TAF Intel select airport on the map </h3>
+
+            <div class="byline">
+                By <a href="http://vinorda.pythonanywhere.com/">vinorda@CAI - Central Airport Intelligence!</a>
+            </div>
+        </header>
+
         <!--need to give Leaflet a place to put the map, and MUST give that map a height 
         make a div with the id of map, and give it a height with inline style. -->
 
         <div id="mapid" style="width:100%; height:600px;"></div>
 
-        <h1>Airports in Australia</h1>
+        <hr>  <!-- Put table below the leaflet map div grop -->
 
         <table border=1 cellpadding=7>
+
             <tr> <!-- do row for table column headers -->
                 <th>Airport_ID</th>
                 <th>Area</th>
@@ -44,18 +70,29 @@ see https://leafletjs.com/examples/quick-start/
                 <th>Type</th>
                 <th>Reg</th>
                 <th>State</th>
+                <th>HAM ceiling (ft)</th>
+                <th>HAM vis (m)</th>
+                <th>SAM ceiling(ft)</th>
+                <th>SAM vis (m)</th>
+                <th>MSA (ft)</th>
             </tr>
             <!-- loop thru each record and stuff into table row -->
             {% for obj in object_list %}
             <tr> 
                 <!-- add a hyperlink to each detail page to the table -->
-                <td><a href="{{ obj.LOC_ID}}/">{{ obj.Location}}</a></td>
+                {# <td><<a href="{{url_for('aero_intel',taf_id={{obj.LOC_ID}})}}">{{ obj.Location}}</a> #}
+                <td><a href="/api/v1/resources/aero_intel?taf_id={{obj.LOC_ID}}">{{ obj.Location}}</a>
                 <td>{{ obj.AREA }}</td>
                 <td>{{ obj.Lat }}</td>
                 <td>{{ obj.Long }}</td>
                 <td>{{ obj.Type }}</td>
                 <td>{{ obj.Reg }}</td>
                 <td>{{ obj.State }}</td>
+                <td>{{ obj.HAM_cld_ft }}</td>
+                <td>{{ obj.HAM_vis_m }}</td>
+                <td>{{ obj.SAM_cld_ft }}</td>
+                <td>{{ obj.SAM_vis_m }}</td>
+                <td>{{ obj.MSA }}</td>
             </tr>
             {% endfor %}
         </table>
