@@ -1,14 +1,20 @@
 from flask_frozen import Freezer
-from app import app
-from flask import abort
-import os
-from avlocs import get_avlocs
-freezer = Freezer(app)
+from app import app, get_avlocs, get_airport_csv
 
+'''
+DONT DEFINE THESE AGAIN HERE - 
+
+from avlocs import get_avlocs
 def get_airport_csv():
     airports = get_avlocs().reset_index()
     airports = airports.to_dict(orient='records')
     return airports
+
+CAN GET IT FROM OUR app.py LIKE THIS
+from app import app, get_avlocs, get_airport_csv
+'''
+
+freezer = Freezer(app)
 
 @freezer.register_generator
 def detail():
